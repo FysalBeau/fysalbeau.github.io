@@ -227,6 +227,10 @@
             action="https://formsubmit.co/2a4901365e6e19b9d2c7592e23a787f0"
             method="POST"
           >
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display: none" />
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false" />
             <div class="row">
               <div class="input-group">
                 <input type="text" id="name" name="name" required />
