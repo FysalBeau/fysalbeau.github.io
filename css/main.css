@@ -486,7 +486,11 @@ textarea:valid ~ label {
   }
 
   .hero-box-wrapper {
-    margin-top: 10%;
+    margin-top: 15%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 15%;
+    padding: 5%;
   }
   .hero h1 {
     font-size: 65px;
@@ -512,12 +516,25 @@ textarea:valid ~ label {
     justify-content: center;
   }
 
+  .about {
+    margin-top: 15%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 15%;
+  }
+
   .about-info h1 {
     font-weight: bolder;
     font-size: 40px;
   }
   .about-info p {
     font-size: 20px;
+  }
+
+  .project-info {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 0%;
   }
 
   .projects-title h1 {
@@ -561,14 +578,15 @@ textarea:valid ~ label {
   }
 
   .contact-info {
-    padding-left: 11.2%;
-    padding-right: 11.2%;
-    margin-bottom: 5%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 7%;
+    margin-right: 7%;
   }
   .contact h1 {
     display: flex;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     max-width: 300px;
     margin-top: 45px;
     justify-content: center;
@@ -580,6 +598,11 @@ textarea:valid ~ label {
     max-width: 300px;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  .form-wrapper {
+    margin: 5%;
+    padding-top: 10%;
   }
 
   .open-nav {
