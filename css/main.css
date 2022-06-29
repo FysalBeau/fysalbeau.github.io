@@ -23,6 +23,10 @@ body {
 
   font-family: IBM Plex Mono, monospace;
   color: black;
+
+  /* review this! */
+  overflow-x: hidden;
+  /* review this! */
 }
 
 .container {
@@ -52,6 +56,9 @@ body {
   font-size: 25px;
   font-weight: bolder;
   color: black;
+  /* background-color: white;
+  border: 3px solid black;
+  padding: 0%; */
 }
 
 /* changes navigation elements style on scroll */
@@ -123,8 +130,42 @@ section {
   color: #8298f5;
 }
 
-.hero h2 {
+.hero-info h2 {
   color: #fd6237;
+}
+
+/* waving hand emoji animation */
+
+.hand-emoji {
+  animation: waving-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes waving-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*Hire me button css and hover animation css*/
@@ -347,29 +388,82 @@ textarea:valid ~ label {
   }
 
   .hero-box-wrapper {
-    margin-top: 6%;
-    margin-left: 5%;
-    margin-right: 10%;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 9.5%;
   }
 
-  .hero h1 {
+  /* Customizable typewriter css */
+
+  .hero-info h1 {
     font-size: 150px;
     font-weight: bold;
+    position: relative;
+    /* outline: 2px solid red; */
+    width: max-content;
   }
+  .hero-info h1::before,
+  .hero-info h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hero-info h1::before {
+    background: white;
+    animation: typewriter 5s steps(10) 1s forwards;
+  }
+
+  .hero-info h1::after {
+    width: 0.1em;
+    background: #8298f5;
+    animation: typewriter 5s steps(10) 1s forwards, blink 1s steps(10) infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+      /* visibility: hidden; */
+    }
+  }
+
   .hero h2 {
     font-size: 45px;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 6s forwards;
   }
+
   .hero p {
     font-size: 35px;
     font-weight: regular;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 6s forwards;
   }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
   .hero p2 {
     font-size: 60px;
   }
   .button-wrapper {
-    margin-top: 2%;
-    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-left: 7%;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 7s forwards;
   }
 
   .about-info {
@@ -549,20 +643,20 @@ textarea:valid ~ label {
     margin-bottom: 15%;
     padding: 5%;
   }
-  .hero h1 {
+  .hero-info h1 {
     font-size: 65px;
     font-weight: bolder;
   }
-  .hero h2 {
+  .hero-info h2 {
     font-size: 35px;
     font-weight: bold;
   }
-  .hero p {
+  .hero-info p {
     font-size: 20px;
     font-weight: regular;
     margin-bottom: 40px;
   }
-  .hero p2 {
+  .hero-info p2 {
     font-size: 20px;
   }
 
