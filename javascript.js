@@ -25,6 +25,7 @@ const sectionOne = document.querySelector(".hero");
 const sectionOneOptions = {
     root:null, //it is the viewport
     threshold:0.50
+    // ,rootMargin: "-150px"
 
 };
 
@@ -110,3 +111,28 @@ const sectionFourObserver = new IntersectionObserver(function(entries, sectionFo
 } , sectionFourOptions);
 
 sectionFourObserver.observe(sectionFour);
+
+// fade and scroll items into view while scrolling 
+
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = {
+    threshold:0.25
+    // ,rootMargin: "0px 0px -200px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            return;
+        }else{
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    })
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
+
+

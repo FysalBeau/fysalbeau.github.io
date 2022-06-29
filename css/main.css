@@ -54,31 +54,32 @@ body {
   color: black;
 }
 
+/* changes navigation elements style on scroll */
 .nav-home-scrolled {
   color: #f5bf44;
 }
 .nav-about-scrolled {
-  color: #b196e1;
+  color: #93caac;
 }
 .nav-projects-scrolled {
   color: #ee7772;
 }
 .nav-contact-scrolled {
-  color: #93caac;
+  color: #b196e1;
 }
 
+/* changes navigation elements style on hover */
 #nav-home:hover {
   color: #f5bf44;
 }
-
 #nav-about:hover {
-  color: #b196e1;
+  color: #93caac;
 }
 #nav-projects:hover {
   color: #ee7772;
 }
 #nav-contact:hover {
-  color: #93caac;
+  color: #b196e1;
 }
 
 .linkedInSVG:hover {
@@ -95,6 +96,15 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* fade and scroll items into view while scrolling */
+.fade-in {
+  opacity: 0;
+  transition: opacity 750ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
 }
 
 .hero-box-wrapper {
