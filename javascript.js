@@ -1,3 +1,4 @@
+//event listener for mobile nav menu
 const menu = document.querySelector('.menu')
 const close = document.querySelector('.close')
 const nav = document.querySelector('.mob-right-nav')
@@ -9,27 +10,103 @@ close.addEventListener('click', () => {
     nav.classList.remove('open-nav')
 })
 
-// detect if user is in dark-mode
+
+//detect if user is in dark-mode
 const isDarkMode = () => {
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 
-//navigation element change style on scroll
 
-const navElement = document.querySelector(".home-nav-mob");
+//navigation element change style on scroll (ELEMENT 1)
+
+const navElement1 = document.querySelector("#nav-home");
 const sectionOne = document.querySelector(".hero");
 
-const sectionOneOptions = {};
+const sectionOneOptions = {
+    root:null, //it is the viewport
+    threshold:0.50
+
+};
 
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            navElement.classList.add("nav-scrolled");
+            navElement1.classList.add("nav-home-scrolled");
         }else{
-            navElement.classList.remove("nav-scrolled")
+            navElement1.classList.remove("nav-home-scrolled")
         }
-        console.log(entry.target);
+        // console.log(entry);
     })
 } , sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+
+//navigation element change style on scroll (ELEMENT 2)
+
+const navElement2 = document.querySelector("#nav-about");
+const sectionTwo = document.querySelector(".about");
+
+const sectionTwoOptions = {
+    root:null, //it is the viewport
+    threshold:0.50
+};
+
+const sectionTwoObserver = new IntersectionObserver(function(entries, sectionTwoObserver) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            navElement2.classList.add("nav-about-scrolled");
+        }else{
+            navElement2.classList.remove("nav-about-scrolled")
+        }
+        // console.log(entry.target);
+    })
+} , sectionTwoOptions);
+
+sectionTwoObserver.observe(sectionTwo);
+
+//navigation element change style on scroll (ELEMENT 3)
+
+const navElement3 = document.querySelector("#nav-projects");
+const sectionThree = document.querySelector(".projects");
+
+const sectionThreeOptions = {
+    root:null, //it is the viewport
+    threshold:0.50
+};
+
+const sectionThreeObserver = new IntersectionObserver(function(entries, sectionThreeObserver) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            navElement3.classList.add("nav-projects-scrolled");
+        }else{
+            navElement3.classList.remove("nav-projects-scrolled")
+        }
+        // console.log(entry.target);
+    })
+} , sectionThreeOptions);
+
+sectionThreeObserver.observe(sectionThree);
+
+//navigation element change style on scroll (ELEMENT 4)
+
+const navElement4 = document.querySelector("#nav-contact");
+const sectionFour = document.querySelector(".contact");
+
+const sectionFourOptions = {
+    root:null, //it is the viewport
+    threshold:0.50
+};
+
+const sectionFourObserver = new IntersectionObserver(function(entries, sectionFourObserver) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            navElement4.classList.add("nav-contact-scrolled");
+        }else{
+            navElement4.classList.remove("nav-contact-scrolled")
+        }
+        // console.log(entry.target);
+    })
+} , sectionFourOptions);
+
+sectionFourObserver.observe(sectionFour);

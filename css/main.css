@@ -54,13 +54,23 @@ body {
   color: black;
 }
 
-.nav-scrolled {
+.nav-home-scrolled {
+  color: #f5bf44;
+}
+.nav-about-scrolled {
+  color: #b196e1;
+}
+.nav-projects-scrolled {
   color: #ee7772;
+}
+.nav-contact-scrolled {
+  color: #93caac;
 }
 
 #nav-home:hover {
   color: #f5bf44;
 }
+
 #nav-about:hover {
   color: #b196e1;
 }
