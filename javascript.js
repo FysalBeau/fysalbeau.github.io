@@ -112,7 +112,9 @@ const sectionFourObserver = new IntersectionObserver(function(entries, sectionFo
 
 sectionFourObserver.observe(sectionFour);
 
+
 // fade and scroll items into view while scrolling 
+
 
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
