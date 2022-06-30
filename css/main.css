@@ -414,13 +414,13 @@ textarea:valid ~ label {
 
   .hero-info h1::before {
     background: white;
-    animation: typewriter 5s steps(10) 1s forwards;
+    animation: typewriter 3s steps(10) 1s forwards;
   }
 
   .hero-info h1::after {
     width: 0.1em;
     background: #8298f5;
-    animation: typewriter 5s steps(10) 1s forwards, blink 1s steps(10) infinite;
+    animation: typewriter 3s steps(10) 1s forwards, blink 1s steps(10) infinite;
   }
 
   @keyframes typewriter {
@@ -440,14 +440,14 @@ textarea:valid ~ label {
     font-size: 45px;
     font-weight: bold;
     opacity: 0;
-    animation: fadeIn 2s ease-in 6s forwards;
+    animation: fadeIn 2s ease-in 4s forwards;
   }
 
   .hero p {
     font-size: 35px;
     font-weight: regular;
     opacity: 0;
-    animation: fadeIn 2s ease-in 6s forwards;
+    animation: fadeIn 2s ease-in 4s forwards;
   }
 
   @keyframes fadeIn {
@@ -460,10 +460,10 @@ textarea:valid ~ label {
     font-size: 60px;
   }
   .button-wrapper {
-    margin-top: 3.5%;
+    margin-top: 1.5%;
     margin-left: 7%;
     opacity: 0;
-    animation: fadeIn 2s ease-in 7s forwards;
+    animation: fadeIn 2s ease-in 5s forwards;
   }
 
   .about-info {
