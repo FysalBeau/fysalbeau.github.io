@@ -126,14 +126,6 @@ section {
   z-index: 2;
 }
 
-.hero-info h1 {
-  color: #8298f5;
-}
-
-.hero-info h2 {
-  color: #fd6237;
-}
-
 /* waving hand emoji animation */
 
 .hand-emoji {
@@ -167,6 +159,64 @@ section {
     transform: rotate(0deg);
   }
 }
+/* Customizable typewriter css */
+
+.hero-info h1 {
+  color: #8298f5;
+  position: relative;
+  /* outline: 2px solid red; */
+  width: max-content;
+}
+.hero-info h1::before,
+.hero-info h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-info h1::before {
+  background: white;
+  animation: typewriter 3s steps(10) 1s forwards;
+}
+
+.hero-info h1::after {
+  width: 0.1em;
+  background: #8298f5;
+  animation: typewriter 3s steps(10) 1s forwards, blink 1s steps(10) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+    /* visibility: hidden; */
+  }
+}
+
+.hero-info h2 {
+  color: #fd6237;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 4s forwards;
+}
+
+.hero-info p {
+  opacity: 0;
+  animation: fadeIn 2s ease-in 4s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 /*Hire me button css and hover animation css*/
 .btn-1 {
@@ -187,6 +237,8 @@ section {
   text-decoration: none;
   font-size: 40px;
   font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 5s forwards;
 }
 
 .btn-1:hover {
@@ -393,67 +445,19 @@ textarea:valid ~ label {
     margin-right: 9.5%;
   }
 
-  /* Customizable typewriter css */
-
   .hero-info h1 {
     font-size: 150px;
     font-weight: bold;
-    position: relative;
-    /* outline: 2px solid red; */
-    width: max-content;
-  }
-  .hero-info h1::before,
-  .hero-info h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .hero-info h1::before {
-    background: white;
-    animation: typewriter 3s steps(10) 1s forwards;
-  }
-
-  .hero-info h1::after {
-    width: 0.1em;
-    background: #8298f5;
-    animation: typewriter 3s steps(10) 1s forwards, blink 1s steps(10) infinite;
-  }
-
-  @keyframes typewriter {
-    to {
-      left: 100%;
-    }
-  }
-
-  @keyframes blink {
-    to {
-      background: transparent;
-      /* visibility: hidden; */
-    }
   }
 
   .hero h2 {
     font-size: 45px;
     font-weight: bold;
-    opacity: 0;
-    animation: fadeIn 2s ease-in 4s forwards;
   }
 
   .hero p {
     font-size: 35px;
     font-weight: regular;
-    opacity: 0;
-    animation: fadeIn 2s ease-in 4s forwards;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
   }
 
   .hero p2 {
@@ -462,8 +466,6 @@ textarea:valid ~ label {
   .button-wrapper {
     margin-top: 1.5%;
     margin-left: 7%;
-    opacity: 0;
-    animation: fadeIn 2s ease-in 5s forwards;
   }
 
   .about-info {
@@ -644,11 +646,11 @@ textarea:valid ~ label {
     padding: 5%;
   }
   .hero-info h1 {
-    font-size: 65px;
+    font-size: 40px;
     font-weight: bolder;
   }
   .hero-info h2 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
   }
   .hero-info p {
