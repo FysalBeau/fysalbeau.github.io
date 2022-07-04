@@ -253,12 +253,27 @@ section {
   text-align: center;
 }
 
+.about-grid {
+  display: grid;
+  gap: 1.5rem;
+  place-items: center;
+  grid-auto-columns: 1fr;
+}
+
 .about-info {
   padding: 5%;
   background-color: white;
   border: 3px solid black;
   z-index: 2;
   box-shadow: 12px 12px #93caac;
+}
+
+.pic {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid black;
 }
 
 .project-grid {
@@ -468,9 +483,16 @@ textarea:valid ~ label {
     margin-left: 7%;
   }
 
+  .about-grid {
+    display: grid;
+    gap: 1.5rem;
+    place-items: center;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: "first second";
+  }
+
   .about-info {
-    margin-left: 20%;
-    margin-right: 20%;
+    grid-area: first;
   }
 
   .about-info h1 {
@@ -483,9 +505,13 @@ textarea:valid ~ label {
     font-weight: regular;
   }
 
-  /* .photo img{
-        width: 200px;
-    } */
+  .photo {
+    grid-area: second;
+  }
+
+  .pic {
+    margin-left: 5%;
+  }
 
   .project-grid {
     display: grid;
@@ -682,6 +708,10 @@ textarea:valid ~ label {
   }
   .about-info p {
     font-size: 20px;
+  }
+
+  .pic {
+    margin-top: 8%;
   }
 
   .project-info {
