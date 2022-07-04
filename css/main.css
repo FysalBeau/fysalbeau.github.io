@@ -484,9 +484,6 @@ textarea:valid ~ label {
   }
 
   .about-grid {
-    display: grid;
-    gap: 1.5rem;
-    place-items: center;
     grid-auto-columns: 1fr 1fr;
     grid-template-areas: "first second";
   }
@@ -514,9 +511,6 @@ textarea:valid ~ label {
   }
 
   .project-grid {
-    display: grid;
-    gap: 1.5rem;
-    place-items: center;
     grid-auto-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "one two two"
