@@ -286,6 +286,10 @@ section {
 .projects-title{
   font-size: 40px;
   font-weight: bolder;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 12px 12px #8298f5;
+  margin-bottom: 50px;
 }
 
 .project-grid {
@@ -491,6 +495,12 @@ textarea:valid ~ label {
   .button-wrapper {
     margin-top: 1.5%;
     margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right:60px;
+    top:30px;
   }
 
   .about-grid {
