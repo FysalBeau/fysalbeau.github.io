@@ -4,6 +4,92 @@
   box-sizing: border-box;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /*Smooth scroll code wasnt working, had to override the current auto scroll 
 settings by putting !important into css code*/
 *,
@@ -291,6 +377,7 @@ section {
   box-shadow: 12px 12px #8298f5;
   margin-bottom: 50px;
 }
+
 .project-grid {
   display: grid;
   gap: 1.5rem;
@@ -306,6 +393,9 @@ section {
 }
 .project-grid:nth-child(5) {
   grid-area: five;
+}
+.carousel-container{
+  grid-area: six;
 }
 
 .project-info {
@@ -533,7 +623,8 @@ textarea:valid ~ label {
     grid-auto-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "one two two"
-      "three four five";
+      "three four five"
+      "six six six";
     margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
@@ -685,7 +776,8 @@ textarea:valid ~ label {
     grid-template-areas:
       " one three"
       "four five"
-      "two two";
+      "two two"
+      'six six';
   }
 
   .project-info {
@@ -874,6 +966,18 @@ textarea:valid ~ label {
 
   .pic {
     margin-top: 8%;
+  }
+
+  .project-grid {
+    grid-auto-columns: 1fr;
+    grid-template: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
+  
   }
 
   .project-info {
