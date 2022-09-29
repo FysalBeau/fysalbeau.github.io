@@ -85,55 +85,7 @@
     fill: #93caac;
   }
   
-
-  .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .projects-title h1{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bolder;
-    background-color: white;
-    border: 3px solid black;
-    box-shadow: 12px 12px #8298f5;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    position: relative;
-    width: 500px;
-
-  }
-
-  
-.project2-info {
-  text-align: center;
-  background-color: white;
-  border: 3px solid black;
-  box-shadow: 12px 12px #ee7772; 
-  width: 500px;
-  margin-bottom: 50px;
-}
-
-.languages {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.l1 {
-  padding: 20px;
-}
-.l2 {
-  padding: 20px;
-}
-.l3 {
-  padding: 20px;
-}
-
-/*   
+  /*   
   .project-grid {
     display: grid;
     gap: 1.5rem;
@@ -156,100 +108,71 @@
   } */
   
 
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
+  .project-grid{
+    display: grid;
+    gap: 1.5rem;
+    place-items: center;
+    grid-auto-columns: 1fr;
   }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: relative;
-    top:10px;
-    width: 100%;
-    text-align: center;
+
+  .projects-title h1{
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    font-weight: bolder;
     background-color: white;
-    border: 1px solid black;
-    box-shadow: 4px 4px #ee7772;
-  
+    border: 3px solid black;
+    box-shadow: 12px 12px #8298f5;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 600px;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 12px 12px #93caac;
+    margin-bottom: 50px;
+    width: 600px;
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  .l1 {
+    padding: 20px;
   }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  .l2 {
+    padding: 20px;
   }
-  
-  .active, .dot:hover {
-    background-color: #717171;
+  .l3 {
+    padding: 20px;
   }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
- 
+    
 
   
+.project2-info {
+  text-align: center;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 12px 12px #ee7772; 
+  width: 80%;
+  margin-bottom: 50px;
+  padding: 5%;
+  font-size: 20px;
+}
 
-  
+.initial-h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.detailed-h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+
   /*
   *
   *
