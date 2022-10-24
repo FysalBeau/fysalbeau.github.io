@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fysal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/pose.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      size="16x16"
+      href="assets/2D.jpg"
+      style="height: 16px; width: 16px"
+    />
+    <script src="tugofwar.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="head-info">
+        <div class="nav-info">
+          <div class="left-nav">
+            <a id="nav-home" class="home-nav-mob" href="">Home</a>
+            <a id="nav-about" class="left-nav-desk" href="">About</a>
+            <a id="nav-projects" class="left-nav-desk" href="">Projects</a>
+            <a id="nav-contact" class="left-nav-desk" href="">Contact</a>
+          </div>
+
+          <div class="right-nav">
+            <a
+              class="right-nav-desk"
+              href="https://www.linkedin.com/in/fysalbeauferris/"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 65 65"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="linkedInSVG"
+                  d="M59.7756 0H5.22438C2.34 0 0 2.34 0 5.22438V59.7756C0 62.66 2.34 65 5.22438 65H59.7756C62.66 65 65 62.66 65 59.7756V5.22438C65 2.34 62.66 0 59.7756 0ZM59.7756 59.8C23.3919 59.7919 5.2 59.7837 5.2 59.7756C5.20812 23.3919 5.21625 5.2 5.22438 5.2C41.6081 5.20812 59.8 5.21625 59.8 5.22438C59.7919 41.6081 59.7837 59.8 59.7756 59.8ZM9.63625 24.3669H19.2806V55.3881H9.63625V24.3669ZM14.4625 20.1256C17.5419 20.1256 20.0525 17.6231 20.0525 14.5356C20.0525 13.8015 19.9079 13.0746 19.627 12.3964C19.3461 11.7182 18.9343 11.102 18.4152 10.5829C17.8961 10.0638 17.2799 9.65206 16.6017 9.37114C15.9235 9.09021 15.1966 8.94563 14.4625 8.94563C13.7284 8.94563 13.0015 9.09021 12.3233 9.37114C11.6451 9.65206 11.0289 10.0638 10.5098 10.5829C9.99069 11.102 9.57894 11.7182 9.29801 12.3964C9.01709 13.0746 8.8725 13.8015 8.8725 14.5356C8.86437 17.6231 11.3669 20.1256 14.4625 20.1256ZM34.9619 40.04C34.9619 35.9937 35.7337 32.0775 40.7469 32.0775C45.6869 32.0775 45.76 36.7006 45.76 40.3V55.3881H55.3962V38.3744C55.3962 30.0219 53.5925 23.595 43.8344 23.595C39.1462 23.595 36.0019 26.1706 34.71 28.6081H34.58V24.3669H25.3256V55.3881H34.9619V40.04Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a class="right-nav-desk" href="https://github.com/FysalBeau">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 65 65"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="githubSVG"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M32.5 0C14.5437 0 0 14.5437 0 32.5C0 46.8812 9.30312 59.0281 22.2219 63.3344C23.8469 63.6187 24.4562 62.6437 24.4562 61.7906C24.4562 61.0187 24.4156 58.4594 24.4156 55.7375C16.25 57.2406 14.1375 53.7469 13.4875 51.9187C13.1219 50.9844 11.5375 48.1 10.1562 47.3281C9.01875 46.7188 7.39375 45.2156 10.1156 45.175C12.675 45.1344 14.5031 47.5312 15.1125 48.5062C18.0375 53.4219 22.7094 52.0406 24.5781 51.1875C24.8625 49.075 25.7156 47.6531 26.65 46.8406C19.4187 46.0281 11.8625 43.225 11.8625 30.7937C11.8625 27.2594 13.1219 24.3344 15.1938 22.0594C14.8687 21.2469 13.7312 17.9156 15.5187 13.4469C15.5187 13.4469 18.2406 12.5938 24.4562 16.7781C27.0562 16.0469 29.8187 15.6812 32.5812 15.6812C35.3438 15.6812 38.1062 16.0469 40.7062 16.7781C46.9219 12.5531 49.6437 13.4469 49.6437 13.4469C51.4312 17.9156 50.2938 21.2469 49.9688 22.0594C52.0406 24.3344 53.3 27.2187 53.3 30.7937C53.3 43.2656 45.7031 46.0281 38.4719 46.8406C39.65 47.8562 40.6656 49.8062 40.6656 52.8531C40.6656 57.2 40.625 60.6937 40.625 61.7906C40.625 62.6437 41.2344 63.6594 42.8594 63.3344C49.3111 61.1561 54.9174 57.0096 58.8891 51.4783C62.8608 45.947 64.9981 39.3095 65 32.5C65 14.5437 50.4562 0 32.5 0Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a
+              class="right-nav-desk"
+              href="/assets/Fysal_Beauferris_Resume.pdf"
+              download="Fysal_Beauferris_Resume.pdf"
+            >
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 65 65"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="resumeSVG"
+                  d="M43.75 11.6667H17.5V58.3333H52.5V20.4167H43.75V11.6667ZM17.5 5.83335H46.6666L58.3333 17.5V58.3333C58.3333 59.8804 57.7187 61.3642 56.6247 62.4581C55.5308 63.5521 54.0471 64.1667 52.5 64.1667H17.5C15.9529 64.1667 14.4691 63.5521 13.3752 62.4581C12.2812 61.3642 11.6666 59.8804 11.6666 58.3333V11.6667C11.6666 10.513 12.0087 9.38514 12.6497 8.42585C13.2907 7.46657 14.2017 6.71889 15.2676 6.27738C16.3335 5.83587 17.5064 5.72035 18.638 5.94543C19.7695 6.17051 20.8089 6.72608 21.6247 7.54189C22.4406 8.3577 22.9961 9.3971 23.2212 10.5287C23.4463 11.6602 23.3308 12.8331 22.8893 13.899C22.4477 14.9649 21.7001 15.8759 20.7408 16.5169C19.7815 17.1579 18.6537 17.5 17.5 17.5V5.83335ZM23.3333 32.0833H46.6666V37.9167H23.3333V32.0833ZM23.3333 43.75H46.6666V49.5833H23.3333V43.75Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <svg
+              class="menu"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.99801 34.2857H38.002C38.5118 34.2865 39.0022 34.5654 39.3729 35.0653C39.7436 35.5652 39.9667 36.2484 39.9966 36.9754C40.0264 37.7024 39.8609 38.4182 39.5336 38.9767C39.2064 39.5351 38.7423 39.894 38.236 39.98L38.002 40H1.99801C1.48819 39.9992 0.997831 39.7203 0.627117 39.2204C0.256404 38.7205 0.033318 38.0373 0.00344045 37.3103C-0.0264371 36.5833 0.139149 35.8675 0.466366 35.3091C0.793582 34.7506 1.25773 34.3917 1.76398 34.3057L1.99801 34.2857H38.002H1.99801ZM1.99801 17.1429L38.002 17.1371C38.5118 17.138 39.0022 17.4168 39.3729 17.9167C39.7436 18.4166 39.9667 19.0999 39.9966 19.8268C40.0264 20.5538 39.8609 21.2697 39.5336 21.8281C39.2064 22.3865 38.7423 22.7454 38.236 22.8314L38.002 22.8514L1.99801 22.8571C1.48819 22.8563 0.997831 22.5775 0.627117 22.0776C0.256404 21.5777 0.033318 20.8944 0.00344045 20.1674C-0.0264371 19.4405 0.139149 18.7246 0.466366 18.1662C0.793582 17.6078 1.25773 17.2489 1.76398 17.1629L1.99801 17.1429L38.002 17.1371L1.99801 17.1429ZM1.99801 0H38.002C38.5118 0.000807736 39.0022 0.279654 39.3729 0.779566C39.7436 1.27948 39.9667 1.96272 39.9966 2.6897C40.0264 3.41668 39.8609 4.13251 39.5336 4.69095C39.2064 5.24939 38.7423 5.60828 38.236 5.69429L38.002 5.71429H1.99801C1.48819 5.71348 0.997831 5.43463 0.627117 4.93472C0.256404 4.43481 0.033318 3.75156 0.00344045 3.02459C-0.0264371 2.29761 0.139149 1.58177 0.466366 1.02334C0.793582 0.464899 1.25773 0.10601 1.76398 0.0199999L1.99801 0H38.002H1.99801Z"
+                fill="black"
+              />
+            </svg>
+
+            <nav class="mob-right-nav">
+              <svg
+                class="close"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.9375 0C4.89746 0 0 4.89746 0 10.9375C0 16.9775 4.89746 21.875 10.9375 21.875C16.9775 21.875 21.875 16.9775 21.875 10.9375C21.875 4.89746 16.9775 0 10.9375 0ZM14.9756 15.0928L13.3643 15.0855L10.9375 12.1924L8.51318 15.083L6.89941 15.0903C6.79199 15.0903 6.7041 15.0049 6.7041 14.895C6.7041 14.8486 6.72119 14.8047 6.75049 14.7681L9.92676 10.9839L6.75049 7.20215C6.72099 7.16637 6.70462 7.12157 6.7041 7.07519C6.7041 6.96777 6.79199 6.87988 6.89941 6.87988L8.51318 6.88721L10.9375 9.78027L13.3618 6.88965L14.9731 6.88232C15.0806 6.88232 15.1685 6.96777 15.1685 7.07764C15.1685 7.12402 15.1514 7.16797 15.1221 7.20459L11.9507 10.9863L15.1245 14.7705C15.1538 14.8071 15.1709 14.8511 15.1709 14.8975C15.1709 15.0049 15.083 15.0928 14.9756 15.0928Z"
+                  fill="#eee4e4"
+                />
+              </svg>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/fysalbeauferris/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li><a href="https://github.com/FysalBeau">GitHub</a></li>
+                <li>
+                  <a
+                    href="/assets/Fysal_Beauferris_Resume.pdf"
+                    download="Fysal_Beauferris_Resume.pdf"
+                    >Resumé</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="project-grid">
+        <div class="projects-title">
+          <h1>Alphabody Unlock</h1>
+          <div class="languages">
+            <a class="l1"
+              ><svg
+                width="80"
+                height="80"
+                viewBox="0 0 124 124"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26.2466 0H31.837V5.52317H36.952V0H42.5423V16.7193H36.952V11.1238H31.837V16.7193H26.2518V0H26.2466ZM49.8893 5.54383H44.9706V0H60.4035V5.54383H55.4796V16.7193H49.8893V5.54383V5.54383ZM62.8525 0H68.6805L72.2661 5.8745L75.8466 0H81.6746V16.7193H76.1101V8.432L72.2661 14.3788H72.168L68.3188 8.43717V16.7193H62.8525V0V0ZM84.4543 0H90.0498V11.1962H97.9031V16.7245H84.4543V0V0Z"
+                  fill="black"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M26.071 114.039L15.5 24.3712H108.5L97.9238 114.028L61.9483 124L26.071 114.039ZM47.4455 64.9554L46.4432 53.692H88.5257L89.5073 42.6974H34.4307L37.3963 75.9552H75.5108L74.2347 90.2152L61.969 93.5322H61.9587L49.7137 90.2255L48.9283 81.4577H37.882L39.4217 98.7247L61.9483 104.976L84.5112 98.7247L87.2598 67.9107L87.5285 64.9605H47.4455V64.9554Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a class="l2"
+              ><svg
+                width="80"
+                height="80"
+                viewBox="0 0 94 124"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.7604 0H37.08V5.56967H29.33V11.1393H37.08V16.709H23.7604V0ZM39.7409 0H53.0657V4.84633H45.3157V5.8125H53.0657V16.9518H39.7409V11.8678H47.4909V10.8965H39.7409V0ZM55.7317 0H69.0462V4.84633H61.2962V5.8125H69.0462V16.9518H55.7317V11.8678H63.4817V10.8965H55.7317V0Z"
+                  fill="black"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M46.9535 124L11.0762 114.039L0.5 24.3712H93.5L82.929 114.028L46.9535 124ZM21.4095 64.9605L22.3963 75.9552H60.5108L59.2347 90.2152L46.969 93.5322H46.9587L34.7137 90.2255L33.9283 81.4577H22.8872L24.4268 98.7247L46.9535 104.976L69.5163 98.7247L72.265 67.9107L72.5337 64.9605L74.5177 42.6974H19.4307L20.433 53.6972H62.469L61.4667 64.9605H21.4095V64.9605Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a class="l3"
+              ><svg
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 0H80V80H0V0ZM61.1567 67.0667C57.4467 67.0667 55.35 65.1333 53.74 62.5L47.63 66.05C49.8367 70.41 54.3467 73.7367 61.33 73.7367C68.47 73.7367 73.7867 70.03 73.7867 63.26C73.7867 56.9833 70.18 54.1933 63.7933 51.45L61.9133 50.6467C58.6867 49.2467 57.29 48.3367 57.29 46.08C57.29 44.2567 58.69 42.86 60.89 42.86C63.0467 42.86 64.4367 43.77 65.7267 46.08L71.58 42.3233C69.1033 37.9667 65.67 36.3033 60.89 36.3033C54.1767 36.3033 49.88 40.5967 49.88 46.2367C49.88 52.3533 53.48 55.25 58.9067 57.56L60.7867 58.3667C64.2167 59.8667 66.26 60.78 66.26 63.3567C66.26 65.51 64.27 67.0667 61.1567 67.0667ZM32.0233 67.0167C29.44 67.0167 28.3633 65.25 27.1833 63.15L21.0633 66.8567C22.8367 70.61 26.3233 73.7233 32.34 73.7233C39.0033 73.7233 43.5667 70.18 43.5667 62.3967V36.73H36.05V62.2967C36.05 66.0533 34.49 67.0167 32.02 67.0167H32.0233Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <a class="l4" href="https://github.com/FysalBeau/Pose-Unlock">
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_5_2)">
+                  <path
+                    d="M78.49 36.435L43.56 1.51C43.0817 1.03151 42.5139 0.651937 41.8889 0.392966C41.2639 0.133995 40.594 0.000701904 39.9175 0.000701904C39.241 0.000701904 38.5711 0.133995 37.9461 0.392966C37.3211 0.651937 36.7533 1.03151 36.275 1.51L29.025 8.76L38.225 17.96C39.31 17.5895 40.4773 17.5316 41.5937 17.7927C42.7101 18.0539 43.7306 18.6237 44.5387 19.437C45.3468 20.2503 45.9099 21.2744 46.1639 22.3924C46.4179 23.5105 46.3524 24.6774 45.975 25.76L54.84 34.63C56.1516 34.1682 57.5813 34.1668 58.8937 34.626C60.2062 35.0853 61.3232 35.9777 62.0607 37.1565C62.7982 38.3353 63.1124 39.7301 62.9514 41.1112C62.7904 42.4923 62.1639 43.7775 61.175 44.755C60.1739 45.7622 58.8542 46.3906 57.4413 46.5329C56.0283 46.6751 54.6098 46.3224 53.4281 45.535C52.2463 44.7475 51.3746 43.5742 50.9618 42.2154C50.5491 40.8566 50.6209 39.3967 51.165 38.085L42.9 29.815V51.58C44.1563 52.2019 45.1615 53.2355 45.7481 54.5087C46.3347 55.7818 46.4672 57.2175 46.1235 58.5765C45.7799 59.9355 44.9809 61.1357 43.8596 61.977C42.7384 62.8183 41.3627 63.2499 39.9618 63.1999C38.5609 63.1498 37.2195 62.6212 36.1611 61.7021C35.1028 60.7829 34.3914 59.5288 34.1456 58.1487C33.8998 56.7687 34.1343 55.3461 34.8103 54.118C35.4862 52.89 36.5625 51.9307 37.86 51.4V29.435C37.1114 29.1283 36.431 28.6764 35.8579 28.1055C35.2848 27.5345 34.8304 26.8558 34.5208 26.1084C34.2113 25.361 34.0527 24.5597 34.0543 23.7508C34.0559 22.9418 34.2175 22.1412 34.53 21.395L25.465 12.325L1.515 36.275C1.03651 36.7533 0.656934 37.3211 0.397963 37.9461C0.138992 38.5711 0.00569916 39.241 0.00569916 39.9175C0.00569916 40.594 0.138992 41.2639 0.397963 41.8889C0.656934 42.5139 1.03651 43.0817 1.515 43.56L36.445 78.49C36.9233 78.9685 37.4911 79.3481 38.1161 79.607C38.7411 79.866 39.411 79.9993 40.0875 79.9993C40.764 79.9993 41.4339 79.866 42.0589 79.607C42.6839 79.3481 43.2517 78.9685 43.73 78.49L78.495 43.725C79.4601 42.7585 80.0022 41.4484 80.0022 40.0825C80.0022 38.7166 79.4601 37.4065 78.495 36.44"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5_2">
+                    <rect width="80" height="80" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="project2-info">
+          <h1>Initial Sketch#1</h1>
+          <p>
+            The idea presented in this sketch is to have the user pose in the
+            shape of letters from the english alphabet infront of their phones
+            camera. The user would aim to spell out their password with their
+            body to unlock their phone. This idea would use machine learning to
+            register pose gestures.
+          </p>
+          <img src="oragamiPoseAssets/p2idea1.png" style="width: 80%" />
+          <h1>Initial Sketch#2</h1>
+          <p>
+            The idea presented in this sketch is to have the user aim their
+            camera at themselves acting out a complicated yoga pose. This app
+            would use machine learning to register pose gestures. This app would
+            be marketed to experienced yogis!
+          </p>
+          <img src="oragamiPoseAssets/p2idea2.png" style="width: 80%" />
+          <h1>Initial Sketch#3</h1>
+          <p>
+            The idea presented in this sketch is to have the user hit a high
+            note. This would be based on a specific frequency/pitch and
+            duration. If the user hits the same note that they had created
+            before then they unlock the phone. This app would be marketed to
+            anyone with musical proficiency, someone potentially with a opera or
+            singing background.
+          </p>
+          <img src="oragamiPoseAssets/p2idea4.png" style="width: 80%" />
+          <h1>Initial Sketch#4</h1>
+          <p>
+            The idea presented in this sketch is inspired by naruto the animated
+            series. The user would reenact hand signs in a specific pattern to
+            unlock their phone. Failure to guess correctly would lock themselves
+            out of the their phone.
+          </p>
+          <img src="oragamiPoseAssets/p2idea5.png" style="width: 80%" />
+          <h1>Initial Sketch#5</h1>
+          <p>
+            The idea presented in this sketch is to have the user solve a side
+            of a rubics cube, not to completion but to a certain level of
+            completion. They would then use their camera to check whether or not
+            the side they show matches the side that they had set in the unlock
+            application settings to be the valid side. Failure to guess
+            correctly would lock themselves out of the their phone.
+          </p>
+          <img src="oragamiPoseAssets/p2idea11.png" style="width: 80%" />
+          <h1>Initial Sketch#6</h1>
+          <p>
+            The idea presented in this sketch is to have the user use the
+            microphone to sing what they view as the best line from a song ever.
+            If they say it correctly into the microphone then their phone will
+            unlock. Failure to guess correctly would lock themselves out of the
+            their phone.
+          </p>
+          <img src="oragamiPoseAssets/p2idea12.jpeg" style="width: 80%" />
+          <h1>Initial Sketch#7</h1>
+          <p>
+            The idea presented in this sketch is a simple fingerprint reader.
+            However my idea is not to use the fingerprint sensor as it is only
+            available in some new smart phones, instead use the camera since it
+            is a feature in every modern smart phone.
+          </p>
+          <img src="oragamiPoseAssets/p2idea13.jpeg" style="width: 80%" />
+          <h1>Initial Sketch#8</h1>
+          <p>
+            The idea presented in this sketch is to use the gyroscrope in a
+            users phone to move a ball threw a maze to the finish line to unlock
+            their phone. To make it secure the app could record the path the
+            user took to get the ball to the exit, if they moved it in the
+            correct path then unlock their phone. Otherwise, lock the user out
+            of the phone!
+          </p>
+          <img src="oragamiPoseAssets/p2idea14.png" style="width: 80%" />
+          <h1>Initial Sketch#9</h1>
+          <p>
+            The idea presented in this sketch is answer a question created by
+            the owner of the phone using the microphone on the smart phone
+            device. Failure to answer correctly would result in the user being
+            locked out of the phone.
+          </p>
+          <img src="oragamiPoseAssets/p2idea15.jpeg" style="width: 80%" />
+          <h1>Initial Sketch#10</h1>
+          <p>
+            The idea presented in this sketch is to have the user user their
+            finger as a metaphorical arrow pointing in one of four directions.
+            Directions would be up, down, left and right. If the user doesnt
+            input the directions in the correct order as the preset password,
+            the user would be locked out of the phone.
+          </p>
+          <img src="oragamiPoseAssets/p2idea16.jpeg" style="width: 80%" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
