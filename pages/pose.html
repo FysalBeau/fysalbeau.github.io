@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spartan:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/oragami.css" />
+    <link rel="stylesheet" href="../css/pose.css" />
     <link
       rel="icon"
       type="image/png"
@@ -19,7 +19,7 @@
       href="assets/2D.jpg"
       style="height: 16px; width: 16px"
     />
-    <script src="tugofwar.js" defer></script>
+    <script src="../scripts/pose.js" defer></script>
   </head>
 
   <body>
@@ -140,7 +140,7 @@
       </header>
       <div class="project-grid">
         <div class="projects-title">
-          <h1>Oragami Unlock</h1>
+          <h1>Alphabody Unlock</h1>
           <div class="languages">
             <a class="l1"
               ><svg
@@ -198,7 +198,7 @@
                 />
               </svg>
             </a>
-            <a class="l4" href="https://github.com/FysalBeau/Oragami-Unlock">
+            <a class="l4" href="https://github.com/FysalBeau/Pose-Unlock">
               <svg
                 width="80"
                 height="80"
@@ -222,194 +222,159 @@
           </div>
         </div>
         <div class="project2-info">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/edaLTdUpwvk"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-
-          <h3>
-            <br />
-            Team Members:<br />
+          <h1>Demo Video</h1><br>
+          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/MUiNdChiDOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p><br>
+            <h3><b>Authors:</b></h3>
             Harprabh Gill<br />
             Fysal Beauferris<br />
             Debprasad Mandal<br />
             Navjot Saran <br /><br />
-          </h3>
-          <p>
-            <h2><b>Project description:</b><br></h2>Origami Unlock: Our first design approach was
-            touch-based. The idea was to allow users to open their phones with a
-            sequence of origami folds as passwords. Dotted lines represent
-            folding locations on the paper. They divide the paper into separate
-            buttons. Hitting the wrong button or a button in the wrong sequence
-            starts the unlock process over. Every correct selection leads to an
-            animation that shows the paper folded over where the dotted line
-            was.The password entry completes after the last fold, showing the
-            completed origami figure for a moment. Then the phone unlocks.<br><br>
-          </p>
-          <p><h2><b>How we came up with it and why we chose it:</b><br></h2>
-            We started with each of us coming up with 10 initial sketches for our ideas.
-            We discussed them with one another and the origami idea was an easy favorite. 
-            Most people aren’t familiar enough with origami to guess a password based on the correct fold sequence. 
-            So we figured it's actually a pretty good idea for a phone unlock interface. Someone trying to break 
-            into the user's phone wouldn’t even know the shape they’re going for. It would be fully secure with 
-            limited attempts and customizable origami shapes but we kept it simple to keep the focus on showing 
-            the design and idea.<br><br>    
           </p>
           <p>
-            <h2><b>Initial sketches Before The Origami Design:
+            <h2><b>Project description:</b><br></h2>
+            Alphabody Unlock (Pose based Screen-unlock): Our other design approach was camera based. The idea was to use the teachable machine shown in lecture to train a model using our whole bodies as letters. Swiping up begins the unlock session. A letter is determined by the orientation of the user's whole body. A letter is entered into the password bar every time the timer reaches 0. Users are initially given 20 seconds to get ready in front of the camera. Each countdown after that gives the user 10 seconds to hold their pose for their intended letter. A delete button allows the user to delete the last letter entry. Correct password entries unlock the phone, while incorrect entries result in an error message and restart the session.<br><br>
+          </p>
+          <p>
+            <p><h2><b>How we came up with it and why we chose it:</b><br></h2>
+              After seeing many teachable machine examples we decided to design something using a camera as the sensor. We came up with several ideas like yoga pose sequences or dance, but the body poses as letters idea won over. We chose it because it's easier to track the sequence of poses entered if that data is represented by letters instead of yoga pose names or dance move names. With our design, users can delete past letter entries if they were unintentionally registered. A phone can be secure if a user wants or needs it, as long as they hide before entering their password and make a good one.<br><br>
+          </p>
+          <p>
+            <h2><b>Initial sketches Before The Alphabody Design:
             </b></h2>
-            While deciding on how we should design our touch-based unlock system. We had initially come up with 10 designs, those being a higher or lower game, a drawing unlock, an invisible section unlock, connect the dots, shape memory, origami, prompt answering, carry case style unlock, “Where’s Waldo?” style unlock, and a water level unlock. Out of all these ideas we eventually picked the origami unlock as it has a unique design which is visually appealing, while also having really good security as the user must know the pattern to unlock it. <br><br>
+            While deciding on how we should design our machine learning unlock system. We had initially come up with 10 designs that detect, fingerprints, hand signs, rotations for a maze, rotations for a padlock, rubik’s cube pattern, audio for a line from a song, pointed direction sequence, audio for hitting a note, audio for detecting note, and poses made for letters. Out of all these ideas we eventually picked the pose unlock as it is unique since it uses the users whole body, while also having really good security as the user must know the password and how to make the letters to unlock it.  <br><br>
           </p>
           <h1>Initial Sketch#1</h1>
           <p>
-            The idea presented in this sketch is to have the user solve a
-            riddle. The riddle would be picked in advance by the user. They
-            could choose to either create it themselves from scratch or use a
-            preexisting one provided by me, the app developer. Answer the riddle
-            correctly and the phone unlocks.
+            The idea presented in this sketch is to have the user pose in the
+            shape of letters from the english alphabet infront of their phones
+            camera. The user would aim to spell out their password with their
+            body to unlock their phone. This idea would use machine learning to
+            register pose gestures.
           </p>
-          <img src="oragamiPoseAssets/p2idea3.png" style="width: 70%" />
+          <img src="../assets/poseAssets/idea1.png" style="width: 80%" />
           <h1>Initial Sketch#2</h1>
           <p>
-            The idea presented in this sketch is to have the user craft an
-            object out of paper. This process of using paper to create an animal
-            or complex shape is called oragami. Failure to craft the
-            animal/object in the correct order would result in the user being
-            locked out of their phone.
+            The idea presented in this sketch is to have the user aim their
+            camera at themselves acting out a complicated yoga pose. This app
+            would use machine learning to register pose gestures. This app would
+            be marketed to experienced yogis!
           </p>
-          <img src="oragamiPoseAssets/p2idea6.png" style="width: 80%" />
+          <img src="../assets/poseAssets/idea2.png" style="width: 80%" />
           <h1>Initial Sketch#3</h1>
           <p>
-            The idea presented in this sketch is to have the user pick which
-            artist is their favourite. The owner of the phone would select their
-            favourite artist out of two artists at a time in the unlock
-            application settings beforehand. If they guessed correctly then they
-            would move onto a different binary option of who their favourite
-            artist is. Failure to guess correctly would lock themselves out of
-            the their phone.
+            The idea presented in this sketch is to have the user hit a high
+            note. This would be based on a specific frequency/pitch and
+            duration. If the user hits the same note that they had created
+            before then they unlock the phone. This app would be marketed to
+            anyone with musical proficiency, someone potentially with a opera or
+            singing background.
           </p>
-          <img src="oragamiPoseAssets/p2idea7.png" style="width: 80%" />
+          <img src="../assets/poseAssets/idea3.png" style="width: 80%" />
           <h1>Initial Sketch#4</h1>
           <p>
-            The idea presented in this sketch is for the user to guess a pattern
-            correctly. The idea is simple in nature but could be scaled to add
-            complexity. Every shape the user clicks will highlighted and a
-            number indicating the position in the pattern of that shape will
-            appear on the screen on the corner of the shape. Failure to guess
-            correctly would lock themselves out of the their phone.
+            The idea presented in this sketch is inspired by naruto the animated
+            series. The user would reenact hand signs in a specific pattern to
+            unlock their phone. Failure to guess correctly would lock themselves
+            out of the their phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea8.png" style="width: 80%" />
+          <img src="../assets/poseAssets/idea4.png" style="width: 80%" />
           <h1>Initial Sketch#5</h1>
           <p>
-            The idea presented in this sketch is inspired from a classic bike
-            lock design. The user would click the arrows to move the number up
-            or down. The user would then move their phone fast in one direction
-            to simulate a tugging motion to attempt to unlock. Failure to guess
+            The idea presented in this sketch is to have the user solve a side
+            of a rubics cube, not to completion but to a certain level of
+            completion. They would then use their camera to check whether or not
+            the side they show matches the side that they had set in the unlock
+            application settings to be the valid side. Failure to guess
             correctly would lock themselves out of the their phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea9.png" style="width: 80%" />
+          <img src="../assets/poseAssets/idea5.png" style="width: 50%" />
           <h1>Initial Sketch#6</h1>
           <p>
-            The idea presented in this sketch is inspired by a classic school
-            lock. The user would swipe left and right on the screen to move the
-            dial clockwise or counterclockwise. Follows the same rules as a
-            standard lock. Example rules would be to turn twice clockwise to
-            combo #1, turn once counterclockwise to combo #2. Lastly, go
-            clockwsie to combo #3. The user would then move their phone fast in
-            one direction to simulate a tugging motion to attempt to unlock.
-            Failure to guess correctly would lock themselves out of the their
-            phone.
+            The idea presented in this sketch is to have the user use the
+            microphone to sing what they view as the best line from a song ever.
+            If they say it correctly into the microphone then their phone will
+            unlock. Failure to guess correctly would lock themselves out of the
+            their phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea10.png" style="width: 80%" />
+          <img src="../assets/poseAssets/idea6.jpeg" style="width: 80%" />
           <h1>Initial Sketch#7</h1>
           <p>
-            The idea presented in this sketch is to have the user find a hidden
-            object in an image. The owner of the phone would know where the
-            object is. The goal would be to make it extremly hard to guess and
-            the user only have 2 attempts (incase they accidently click the
-            screen once) to find the object hidden. Inspired by where's waldo.
-            Failure to guess correctly in two guesses would result in the user
-            being locked out of their phone.
+            The idea presented in this sketch is a simple fingerprint reader.
+            However my idea is not to use the fingerprint sensor as it is only
+            available in some new smart phones, instead use the camera since it
+            is a feature in every modern smart phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea17.png" style="width: 60%" />
+          <img src="../assets/poseAssets/idea7.jpeg" style="width: 80%" />
           <h1>Initial Sketch#8</h1>
           <p>
-            The idea presented in this sketch is to have the user draw a
-            specific shape in sand. The owner of the phone would pick what the
-            correct image to draw would be in advance to locking the phone.
-            Failure to draw the correct image would result in the user being
-            locked out of their phone.
+            The idea presented in this sketch is to use the gyroscrope in a
+            users phone to move a ball threw a maze to the finish line to unlock
+            their phone. To make it secure the app could record the path the
+            user took to get the ball to the exit, if they moved it in the
+            correct path then unlock their phone. Otherwise, lock the user out
+            of the phone!
           </p>
-          <img src="oragamiPoseAssets/p2idea18.png" style="width: 60%" />
+          <img src="../assets/poseAssets/idea8.png" style="width: 50%" />
           <h1>Initial Sketch#9</h1>
           <p>
-            The idea presented in this sketch is to have the user correctly
-            apply the correct amount of water each plant needs to live, the
-            owner of the phone would know the correct answer in advance before
-            setting the password. Failure to guess correctly would result in the
-            user being locked out of their phone.
+            The idea presented in this sketch is answer a question created by
+            the owner of the phone using the microphone on the smart phone
+            device. Failure to answer correctly would result in the user being
+            locked out of the phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea19.jpeg" style="width: 80%" />
+          <img src="../assets/poseAssets/idea9.jpeg" style="width: 80%" />
           <h1>Initial Sketch#10</h1>
           <p>
-            The idea presented in this sketch is inspired by preexisting touch
-            simulation unlock designs where the user needs to drag their finger
-            in the correct pattern of vertices and lines to unlock their phone.
-            Failure to slide their finger in the correct position would result
-            in the user being locked out of their phone.
+            The idea presented in this sketch is to have the user user their
+            finger as a metaphorical arrow pointing in one of four directions.
+            Directions would be up, down, left and right. If the user doesnt
+            input the directions in the correct order as the preset password,
+            the user would be locked out of the phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea20.jpeg" style="width: 80%" />
-          <p>
-            <h3><b>Detailed Sketches For The Origami Design: </b><br></h3>
-              After deciding to go with this idea for the touch based design 
-              we developed our idea with detailed sketches. We each made sketches 
-              along the design process to help develop our ideas. <br><br>
+          <img src="../assets/poseAssets/idea10.jpeg" style="width: 80%" />
+          <p><br>
+            <h3><b>Detailed Sketches For The Alphabody Design: </b><br></h3>
+            After deciding to go with this idea for the touch based design we developed our idea with detailed sketches. We each made sketches along the design process to help develop our ideas. <br><br>
           </p>
-          <h1>Detailed Sketch#1</h1>
-          <p>To avoid accidental unlocks we decided to add a feature that requires the user to tap the screen at the bottom to begin unlocking the phone. This serves as the homescreen where the user can receive notifications and check the time as they normally can.</p>
-          <img src="oragamiAssets/oragami1.png"style="width: 45%" >
-          <h1>Detailed Sketch#2</h1>
-          <p>After unlocking, the user's chosen password origami is displayed in its unfolded state. The fold lines for the first step are shown on the shape. Choose the right side to fold.</p>
-          <img src="oragamiAssets/oragami4.png"style="width: 50%" >
-          <h1>Detailed Sketch#3</h1>
-          <p>After choosing the correct side, the process moves to step 2 of a given origami password. Choose the correct side to move onto step 3.</p>
-          <img src="oragamiAssets/oragami5.png"style="width: 50%" >
-          <h1>Detailed Sketch#4</h1>
-          <p>Choosing the correct side shows the resulting shape with the paper folder over the line. Choosing the wrong side to fold at any moment throughout the unlock process restarts the whole process.</p>
-          <img src="oragamiAssets/oragami6.png"style="width: 50%" >
-          <h1>Detailed Sketch#5</h1>
-          <p>Another correct selection! It is beginning to take a familiar shape.</p>
-          <img src="oragamiAssets/oragami7.png"style="width: 50%" >
-          <h1>Detailed Sketch#6</h1>
-          <p>Make another correct fold. Any incorrect selection results in the whole process restarting.</p>
-          <img src="oragamiAssets/oragami8.png"style="width: 50%" >
-          <h1>Detailed Sketch#7</h1>
-          <p>After the final correct fold has been completed, the origami shape displays its figure for a moment before the phone unlocks.</p>
-          <img src="oragamiAssets/oragami9.png"style="width: 50%" >
-          <h1>Detailed Sketch#8</h1>
-          <p>
-            We decided to add a scenic background to create an atmosphere for folding origami. Our idea for the design was to separate the unlock process into states. Each correct fold selection leads to the next state, while any incorrect selection returns the process to the first state.
-            </p>
-          <img src="oragamiAssets/oragami2.png"style="width: 80%" >
-          <h1>Detailed Sketch#9</h1>
-          <p>This sketch shows the process returning the screen to the first state after an incorrect selection.</p>
-          <img src="oragamiAssets/oragami3.png"style="width: 80%" >
-          <h1>Detailed Sketch#10</h1>
-          <p>We decided to add a face to our final origami design. This is a satisfying conclusion for the user after they have completed their password. The display pauses for a moment and then the phone unlocks.</p>
-          <img src="oragamiAssets/oragami10.png"style="width: 80%" >
-          <p>
-            <h3><b>Limitations and Issues:
-            </b><br></h3>
-            The unlock design is secure in the sense that most people don't know origami. Most default origami figures this design could provide would follow known patterns, however. If a non-authorized user decided to spy on an unlock, they could figure out the pattern from seeing the end result origami figure alone. An idea around this is to offer custom designs and fold sequences. Another issue is that someone could just guess repeatedly until they memorize the correct pattern. A password attempt limit immediately solves this issue. Accidental unlocks are extremely improbable because there are so many specific areas of the screen that must be tapped to unlock. Incorrect selections restart the process. <br><br>
+          <div id="detailed-wrapper">
+            <h1>Detailed Sketch#1</h1>
+            <p>We came up with many pose type unlock methods and chose posing letters because it made classification easy. By swiping the screen upward, the unlock process begins. This avoids accidental unlocks. It serves as the homescreen where the user can receive notifications and check the time as they normally can.</p>
+            <img src="../assets/poseAssets/detailed1.png" style="width: 50%">
+            <h1>Detailed Sketch#2</h1>
+            <p>We decided we needed a button to record between each pose scan. We decided on a timer that counts down in a loop instead, for user convenience. </p>
+            <img src="../assets/poseAssets/detailed2.png" style="width: 50%">
+            <h1>Detailed Sketch#3</h1>
+            <p>With a timer, the user could stay in one spot and enter the whole password. Instead of going back and forth between each letter to press a button.</p>
+            <img src="../assets/poseAssets/detailed3.png" style="width: 50%">
+            <h1>Detailed Sketch#4</h1>
+            <p>The user has an x amount of seconds to pose the correct letter. When the timer hits 0, the current pose made by the user is registered.</p>
+            <img src="../assets/poseAssets/detailed4.png" style="width: 50%">
+            <h1>Detailed Sketch#5</h1>
+            <p>Incorrect password entry with a try again button. We decided to go with an automatic reset after the password bar turns red instead, because a try again button makes it more like a game. The automatic reset is more alike password entry so it is good for a phone unlock design that uses letters.</p>
+            <img src="../assets/poseAssets/detailed5.png" style="width: 50%">
+            <h1>Detailed Sketch#6</h1>
+            <p>We also decided not to go with an input method that gives feedback on every entry. This is less secure than what we changed it to - users inputting the whole password before hitting enter for the password.</p>
+            <img src="../assets/poseAssets/detailed6.png" style="width: 50%">
+            <h1>Detailed Sketch#7</h1>
+            <p>Each letter being added in after the timer reaches 0. </p>
+            <img src="../assets/poseAssets/detailed7.png" style="width: 50%">
+            <h1>Detailed Sketch#8</h1>
+            <p>We decided 10 seconds is a good enough time for users to pose for each letter scan. Not so long that password entry takes too long and not so so quick that users struggle to pose in time.</p>
+            <img src="../assets/poseAssets/detailed8.png" style="width: 50%">
+            <h1>Detailed Sketch#9</h1>
+            <p>Instead of this, we went with the full password entry, then hit enter design. </p>
+            <img src="../assets/poseAssets/detailed9.png" style="width: 50%">
+            <h1>Detailed Sketch#10</h1>
+            <p>This was the general idea; to pose the correct sequence of letters, then hit enter to unlock the phone. This is secure from being opened accidentally.</p>
+            <img src="../assets/poseAssets/detailed10.png" style="width: 80%">
+          </div>
+          <p><br>
+            <h3><b>Limitations and Issues:</b><br></h3>
+            This design is secure as long as the user unlocks their phone in total privacy. That is a major limitation because the user has to display their whole body in their phones camera. This means they must be far enough away and have to make movements that attract attention. It is otherwise as secure as any simple text based password interface, because the data we trained the machine with translates to letters. Users must also sort of memorize specific body orientations for letters. They may not always be the most intuitive since we trained the machine with our own specific models instead of every user. A potential fix to that issue is to allow users to train their own models for every letter.<br><br>
           </p>
           <p>
-            <h3><b>My Contribution:
-            </b><br></h3>
+            <h3><b>My Contribution:</b><br></h3>
             After developing our ideas with my group, I made more sketches to discuss further development. I focused mostly on the pose app for code, while helping develop ideas for the origami unlock. I also helped with the documentation. 
           </p>
         </div>
