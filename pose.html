@@ -222,6 +222,28 @@
           </div>
         </div>
         <div class="project2-info">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MUiNdChiDOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>
+            <br />
+            Team Members:<br />
+            Harprabh Gill<br />
+            Fysal Beauferris<br />
+            Debprasad Mandal<br />
+            Navjot Saran <br /><br />
+          </h3>
+          <p>
+            <h2><b>Project description:</b><br></h2>
+            Alphabody Unlock (Pose based Screen-unlock): Our other design approach was camera based. The idea was to use the teachable machine shown in lecture to train a model using our whole bodies as letters. Swiping up begins the unlock session. A letter is determined by the orientation of the user's whole body. A letter is entered into the password bar every time the timer reaches 0. Users are initially given 20 seconds to get ready in front of the camera. Each countdown after that gives the user 10 seconds to hold their pose for their intended letter. A delete button allows the user to delete the last letter entry. Correct password entries unlock the phone, while incorrect entries result in an error message and restart the session.<br><br>
+          </p>
+          <p>
+            <p><h2><b>How we came up with it and why we chose it:</b><br></h2>
+              After seeing many teachable machine examples we decided to design something using a camera as the sensor. We came up with several ideas like yoga pose sequences or dance, but the body poses as letters idea won over. We chose it because it's easier to track the sequence of poses entered if that data is represented by letters instead of yoga pose names or dance move names. With our design, users can delete past letter entries if they were unintentionally registered. A phone can be secure if a user wants or needs it, as long as they hide before entering their password and make a good one.<br><br>
+          </p>
+          <p>
+            <h2><b>Initial sketches Before The Alphabody Design:
+            </b></h2>
+            While deciding on how we should design our machine learning unlock system. We had initially come up with 10 designs that detect, fingerprints, hand signs, rotations for a maze, rotations for a padlock, rubik’s cube pattern, audio for a line from a song, pointed direction sequence, audio for hitting a note, audio for detecting note, and poses made for letters. Out of all these ideas we eventually picked the pose unlock as it is unique since it uses the users whole body, while also having really good security as the user must know the password and how to make the letters to unlock it.  <br><br>
+          </p>
           <h1>Initial Sketch#1</h1>
           <p>
             The idea presented in this sketch is to have the user pose in the
@@ -266,7 +288,7 @@
             application settings to be the valid side. Failure to guess
             correctly would lock themselves out of the their phone.
           </p>
-          <img src="oragamiPoseAssets/p2idea11.png" style="width: 80%" />
+          <img src="oragamiPoseAssets/p2idea11.png" style="width: 50%" />
           <h1>Initial Sketch#6</h1>
           <p>
             The idea presented in this sketch is to have the user use the
@@ -293,7 +315,7 @@
             correct path then unlock their phone. Otherwise, lock the user out
             of the phone!
           </p>
-          <img src="oragamiPoseAssets/p2idea14.png" style="width: 80%" />
+          <img src="oragamiPoseAssets/p2idea14.png" style="width: 50%" />
           <h1>Initial Sketch#9</h1>
           <p>
             The idea presented in this sketch is answer a question created by
@@ -311,6 +333,50 @@
             the user would be locked out of the phone.
           </p>
           <img src="oragamiPoseAssets/p2idea16.jpeg" style="width: 80%" />
+          <p><br>
+            <h3><b>Detailed Sketches For The Alphabody Design: </b><br></h3>
+            After deciding to go with this idea for the touch based design we developed our idea with detailed sketches. We each made sketches along the design process to help develop our ideas. <br><br>
+          </p>
+          <div id="detailed-wrapper">
+            <h1>Detailed Sketch#1</h1>
+            <p>We came up with many pose type unlock methods and chose posing letters because it made classification easy. By swiping the screen upward, the unlock process begins. This avoids accidental unlocks. It serves as the homescreen where the user can receive notifications and check the time as they normally can.</p>
+            <img src="posedetailed/pose1.png" style="width: 50%">
+            <h1>Detailed Sketch#2</h1>
+            <p>We decided we needed a button to record between each pose scan. We decided on a timer that counts down in a loop instead, for user convenience. </p>
+            <img src="posedetailed/pose2.png" style="width: 50%">
+            <h1>Detailed Sketch#3</h1>
+            <p>With a timer, the user could stay in one spot and enter the whole password. Instead of going back and forth between each letter to press a button.</p>
+            <img src="posedetailed/pose3.png" style="width: 50%">
+            <h1>Detailed Sketch#4</h1>
+            <p>The user has an x amount of seconds to pose the correct letter. When the timer hits 0, the current pose made by the user is registered.</p>
+            <img src="posedetailed/pose4.png" style="width: 50%">
+            <h1>Detailed Sketch#5</h1>
+            <p>Incorrect password entry with a try again button. We decided to go with an automatic reset after the password bar turns red instead, because a try again button makes it more like a game. The automatic reset is more alike password entry so it is good for a phone unlock design that uses letters.</p>
+            <img src="posedetailed/pose5.png" style="width: 50%">
+            <h1>Detailed Sketch#6</h1>
+            <p>We also decided not to go with an input method that gives feedback on every entry. This is less secure than what we changed it to - users inputting the whole password before hitting enter for the password.</p>
+            <img src="posedetailed/pose6.png" style="width: 50%">
+            <h1>Detailed Sketch#7</h1>
+            <p>Each letter being added in after the timer reaches 0. </p>
+            <img src="posedetailed/pose7.png" style="width: 50%">
+            <h1>Detailed Sketch#8</h1>
+            <p>We decided 10 seconds is a good enough time for users to pose for each letter scan. Not so long that password entry takes too long and not so so quick that users struggle to pose in time.</p>
+            <img src="posedetailed/pose8.png" style="width: 50%">
+            <h1>Detailed Sketch#9</h1>
+            <p>Instead of this, we went with the full password entry, then hit enter design. </p>
+            <img src="posedetailed/pose9.png" style="width: 50%">
+            <h1>Detailed Sketch#10</h1>
+            <p>This was the general idea; to pose the correct sequence of letters, then hit enter to unlock the phone. This is secure from being opened accidentally.</p>
+            <img src="posedetailed/pose10.png" style="width: 80%">
+          </div>
+          <p><br>
+            <h3><b>Limitations and Issues:</b><br></h3>
+            This design is secure as long as the user unlocks their phone in total privacy. That is a major limitation because the user has to display their whole body in their phones camera. This means they must be far enough away and have to make movements that attract attention. It is otherwise as secure as any simple text based password interface, because the data we trained the machine with translates to letters. Users must also sort of memorize specific body orientations for letters. They may not always be the most intuitive since we trained the machine with our own specific models instead of every user. A potential fix to that issue is to allow users to train their own models for every letter.<br><br>
+          </p>
+          <p>
+            <h3><b>My Contribution:</b><br></h3>
+            After developing our ideas with my group, I made more sketches to discuss further development. I focused mostly on the pose app for code, while helping develop ideas for the origami unlock. I also helped with the documentation. 
+          </p>
         </div>
       </div>
     </div>

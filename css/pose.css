@@ -178,7 +178,12 @@
   font-size: 40px;
   margin-bottom: 40px;
 }
-
+#detailed-wrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   /*
   *
