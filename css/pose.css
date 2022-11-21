@@ -122,11 +122,13 @@
     font-weight: bolder;
     background-color: white;
     border: 3px solid black;
+    border-radius: 30px;
     box-shadow: 12px 12px #8298f5;
     margin-top: 80px;
     margin-bottom: 50px;
     position: relative;
-    width: 600px;
+    width: 700px;
+    padding: 20px;
   }
 
 
@@ -136,9 +138,11 @@
     align-items: center;
     background-color: white;
     border: 3px solid black;
+    border-radius: 30px;
     box-shadow: 12px 12px #93caac;
     margin-bottom: 50px;
-    width: 600px;
+    width: 700px;
+    padding:10px;
   }
   
   .l1 {
@@ -162,6 +166,7 @@
   text-align: center;
   background-color: white;
   border: 3px solid black;
+  border-radius: 30px;
   box-shadow: 12px 12px #ee7772; 
   width: 80%;
   margin-bottom: 50px;
