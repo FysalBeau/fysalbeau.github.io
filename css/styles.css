@@ -340,16 +340,18 @@ section {
   background: #E4F2F9;
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/mock1.png");
   background-size: contain;
   background-repeat: no-repeat; }
 
+.projects-wrapper a:nth-child(1) .card_wrapper {
+  background-image: url("../assets/thumbnail.png");
+ }
 .projects-wrapper a:nth-child(2) .card_wrapper {
-  /* background-image: url("https://cdn.dribbble.com/users/4605/screenshots/1757843/snap.png"); */
+  background-image: url("../assets/Papercrane-1.png");
  }
 
 .projects-wrapper a:nth-of-type(3) .card_wrapper {
-  /* background-image: url("https://cdn.dribbble.com/users/33073/screenshots/2425824/800.png");  */
+  background-image: url("../assets/Alphabody-1.png"); 
 }
 
 .projects-wrapper a:nth-of-type(4) .card_wrapper {
