@@ -334,17 +334,18 @@ section {
   width: 350px;
   transition: transform .5s;
   position: relative;
-  height: 430px;
+  height: 460px;
   border: 1px solid #DEDCDC;
   border-radius: 6px;
-  background: #E4F2F9;
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
 
 .projects-wrapper a:nth-child(1) .card_wrapper {
-  background-image: url("../assets/thumbnail.png");
+  background-image: url("../assets/mkrsunion.png");
  }
 .projects-wrapper a:nth-child(2) .card_wrapper {
   background-image: url("../assets/Papercrane-1.png");
