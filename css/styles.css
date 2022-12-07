@@ -346,17 +346,27 @@ section {
 
 .projects-wrapper a:nth-child(1) .card_wrapper {
   background-image: url("../assets/mkrsunion.png");
+  
  }
 .projects-wrapper a:nth-child(2) .card_wrapper {
   background-image: url("../assets/Papercrane-1.png");
+  background-size: 80%;
+  background-position: top;
  }
 
 .projects-wrapper a:nth-of-type(3) .card_wrapper {
   background-image: url("../assets/Alphabody-1.png"); 
+  background-size: 80%;
+  background-position: top;
 }
 
 .projects-wrapper a:nth-of-type(4) .card_wrapper {
-  /* background-image: url("https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png");  */
+  background-image: url("../assets/tug-of-war.png"); 
+  background-size: 200px 250px;
+  background-position:top;
+}
+.projects-wrapper a:nth-of-type(5) .card_wrapper {
+  background-image: url("../assets/vr-therapy.png"); 
 }
 
 .project_summary {
