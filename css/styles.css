@@ -368,6 +368,11 @@ section {
 .projects-wrapper a:nth-of-type(5) .card_wrapper {
   background-image: url("../assets/vr-therapy.png"); 
 }
+.projects-wrapper a:nth-of-type(6) .card_wrapper {
+  background-image: url("../assets/postureAlert.jpeg"); 
+  background-size: 80%;
+  background-position: top;
+}
 
 .project_summary {
   margin-top: 260px;

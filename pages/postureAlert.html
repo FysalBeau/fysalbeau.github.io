@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spartan:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/postureAlert.css" />
     <link
       rel="icon"
       type="image/png"
@@ -19,7 +19,7 @@
       href="assets/2D.jpg"
       style="height: 16px; width: 16px"
     />
-    <script src="script.js" defer></script>
+    <script src="../scripts/postureAlert.js" defer></script>
   </head>
 
   <body>
@@ -27,14 +27,10 @@
       <header class="head-info">
         <div class="nav-info">
           <div class="left-nav">
-            <a id="nav-home" class="home-nav-mob" href="#hero">Home</a>
-            <a id="nav-about" class="left-nav-desk" href="#about">About</a>
-            <a id="nav-projects" class="left-nav-desk" href="#projects"
-              >Projects</a
-            >
-            <a id="nav-contact" class="left-nav-desk" href="#contact"
-              >Contact</a
-            >
+            <a id="nav-home" class="home-nav-mob" href="../index.html#hero">Home</a>
+            <a id="nav-about" class="left-nav-desk" href="../index.html#about">About</a>
+            <a id="nav-projects" class="left-nav-desk" href="../index.html#projects">Projects</a>
+            <a id="nav-contact" class="left-nav-desk" href="../index.html#contact">Contact</a>
           </div>
 
           <div class="right-nav">
@@ -121,9 +117,9 @@
                 />
               </svg>
               <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
                 <li>
                   <a href="https://www.linkedin.com/in/fysalbeauferris/"
                     >LinkedIn</a
@@ -142,190 +138,132 @@
           </div>
         </div>
       </header>
-
-      <section id="hero" class="hero">
-        <div class="hero-info">
-          <div class="hero-box-wrapper">
-            <p2
-              >Hi There <span class="hand-emoji">&#128075;&#127995;</span>,</p2
-            >
-            <h1>I'm Fysal!</h1>
-            <h2 class="sub-head">
-              Developer &#129489;&#127995;&#8205;&#128187; + Data scientist
-              &#128202;
-            </h2>
-            <p>
-              Im a current undegrad student at the University of Calgary
-              completing a bachlors in Computer Science. Minoring in Data
-              Science.
-            </p>
-          </div>
-          <div class="button-wrapper">
-            <a href="#contact" class="btn-1">
-              <span> Contact Me </span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about fade-in">
-        <div class="about-grid">
-          <div class="about-info">
-            <h1>About Me</h1>
-            <p>
-              Im Fysal Beauferris, a future computer scientist! I am passionate
-              about all things programming, from front-end to back-end
-              development. I am driven to leverage my diverse technical and
-              design skills to decipher challenging problems to help bring
-              products to life! I sweat the details and writing clean,
-              accessible, human code is of utter importance to me. <br /><br />
-              My main aim these days is completing my undergraduate degree at
-              the University of Calgary, with a focus on data science.
-              <br /><br />
-              Im at my happiest when im learning and exploring new concepts,
-              creating and working on new projects with the end goal of thinking
-              about how to improve existing technologies.
-            </p>
-          </div>
-          <div class="photo">
-            <img class="pic" src="assets/profilephoto.png" />
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects fade-in">
+      <div class="project-grid">
         <div class="projects-title">
-          <h1>Some Things I've Built</h1>
+          <h1>Posture Alert</h1>
         </div>
-
-        <div class="projects-wrapper">
-          <a href="pages/mkrsUnion.html">
-            <article class="card_wrapper">
-              <div class="project_summary">
-                <h2 class="project_title">Mkrs Union</h2>
-                <p class="created_date">Created: Winter 2022</p>
-                <p class="project_desc">
-                  Mkrs Union is a makerspace manager web app for the Taylor
-                  Family Digital Library Makerspace.
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <a href="pages/origami.html">
-            <article class="card_wrapper">
-              <div class="project_summary">
-                <h2 class="project_title">Paper Crane - Screen Locker</h2>
-                <p class="created_date">Created: Fall 2022</p>
-                <p class="project_desc">
-                  Web application simulating a lock screen where the user makes
-                  an orgami to unlock their phone.
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <a href="pages/pose.html">
-            <article class="card_wrapper">
-              <div class="project_summary">
-                <h2 class="project_title">Alphabody</h2>
-                <p class="created_date">Created: Fall 2022</p>
-                <p class="project_desc">
-                  Web application that uses user pose gestures as password input
-                  to unlock their phone.
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <a href="pages/tugofwar.html">
-            <article class="card_wrapper">
-              <div class="project_summary">
-                <h2 class="project_title">Tug-Of-War</h2>
-                <p class="created_date">Created: Fall 2022</p>
-                <p class="project_desc">
-                  Tug Of War style mobile game. Two player functionality.
-                </p>
-              </div>
-            </article>
-          </a>
-          <a href="pages/VRTherapy.html">
-            <article class="card_wrapper">
-              <div class="project_summary">
-                <h2 class="project_title">VR Therapy</h2>
-                <p class="created_date">Created: Fall 2022/p></p>
-                <p class="project_desc">
-                  Virtual reality therapy. User can select a level of their
-                  choice to receive a therapy session. Online functionality.
-                </p>
-              </div>
-            </article>
-          </a>
-          <a href="pages/postureAlert.html">
-            <article class="card_wrapper">
-              <div class="project_summary">
-                <h2 class="project_title">Posture Alert</h2>
-                <p class="created_date">December 2022</p>
-                <p class="project_desc">Device that notifies a user if their posture is bad. Made with Arduino.</p>
-              </div>
-            </article>
-          </a>
-        </div>
-      </section>
-
-      <section id="contact" class="contact fade-in">
-        <div class="contact-info">
-          <h1>Get In Touch</h1>
+        <div class="project2-info">
+          <h1>Demo Video</h1><br>
+          <p><br>
+            <h3><b>Authors:</b></h3>
+            Harprabh Gill<br />
+            Fysal Beauferris<br />
+            Debprasad Mandal<br />
+            Navjot Saran <br /><br />
+          </p>
           <p>
-            I am open to freelance opportunities! Have an exciting project where
-            you need some help? Maybe you have another request or questions for
-            me? Whatever the case, dont hesitate to fill out the contact form
-            and lets chat.
+            <h2><b>Project description:</b><br></h2><br><br>
+          </p>
+          <p><h2><b>How we came up with it and why we chose it:</b><br></h2>
+           <br><br>    
+          </p>
+          <p>
+            <h2><b>Initial sketches:
+            </b></h2>
+           <br><br>
+          </p>
+          <h1>Initial Sketch#1</h1>
+          <p>
+            
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#2</h1>
+          <p>
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#3</h1>
+          <p>
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#4</h1>
+          <p>
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#5</h1>
+          <p>
+           
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#6</h1>
+          <p>
+           
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#7</h1>
+          <p>
+            
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#8</h1>
+          <p>
+           
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#9</h1>
+          <p>
+          
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Initial Sketch#10</h1>
+          <p>
+           
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <p>
+            <h3><b>Detailed Sketches: </b><br></h3>
+              <br><br>
+          </p>
+          <h1>Detailed Sketch#1</h1>
+          <p>
+
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#2</h1>
+          <p>
+
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#3</h1>
+          <p></p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#4</h1>
+          <p>
+
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#5</h1>
+          <p></p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#6</h1>
+          <p></p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#7</h1>
+          <p>
+
+          </p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#8</h1>
+          <p>
+            
+            </p>
+            <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#9</h1>
+          <p></p>
+          <img src="../assets/" style="width: 40%" />
+          <h1>Detailed Sketch#10</h1>
+          <p></p>
+          <img src="../assets/" style="width: 40%" />
+          <p>
+            <h3><b>Limitations and Issues:
+            </b><br></h3>
+             <br><br>
+          </p>
+          <p>
+            <h3><b>My Contribution:
+            </b><br></h3>
           </p>
         </div>
-        <div class="form-wrapper">
-          <form
-            action="https://formsubmit.co/2a4901365e6e19b9d2c7592e23a787f0"
-            method="POST"
-          >
-            <!--Honeypot-->
-            <input type="text" name="_honey" style="display: none" />
-            <!--Disable Captcha-->
-            <input type="hidden" name="_captcha" value="false" />
-            <!--Success page-->
-            <!-- <input
-              type="hidden"
-              name="_next"
-              value="fysalbeau@github.io/success.html"
-            /> -->
-            <div class="row">
-              <div class="input-group">
-                <input type="text" id="name" name="name" required />
-                <label for="name"> Your Name</label>
-              </div>
-              <div class="input-group">
-                <input type="text" id=number" name="phone" required>
-                <label for="number"> Phone No.</label>
-              </div>
-            </div>
-
-            <div class="input-group">
-              <input type="email" id="email" name="email" required />
-              <label for="email"> Email Address</label>
-            </div>
-            <div class="input-group">
-              <textarea
-                id="message"
-                rows="8"
-                name="comments,&nbsp;questions"
-                required
-              ></textarea>
-              <label for="message"> Your Message</label>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
+      </div>
     </div>
   </body>
 </html>
