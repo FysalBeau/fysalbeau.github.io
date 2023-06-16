@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #eee4e4;
+  background-color: #e6e3dc;
   background-size: 50px 50px;
   background-image: linear-gradient(to right, grey 1px, transparent 1px),
     linear-gradient(to bottom, grey 1px, transparent 1px);
@@ -221,6 +221,12 @@ section {
   to {
     opacity: 1;
   }
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Hire me button css and hover animation css*/
@@ -549,6 +555,7 @@ textarea:valid ~ label {
     margin-top: 7%;
     margin-left: 7%;
     margin-right: 9.5%;
+    max-width: 1450px;
   }
 
   .hero-info h1 {
@@ -572,9 +579,6 @@ textarea:valid ~ label {
   .button-wrapper {
     margin-top: 1.5%;
     margin-left: 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     right: 60px;
     top: 30px;
@@ -587,6 +591,7 @@ textarea:valid ~ label {
 
   .about-info {
     grid-area: first;
+    max-width: 560px;
   }
 
   .about-info h1 {
@@ -930,9 +935,6 @@ textarea:valid ~ label {
 
   .button-wrapper {
     margin-top: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .about {
