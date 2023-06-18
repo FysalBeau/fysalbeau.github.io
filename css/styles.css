@@ -379,11 +379,11 @@ section {
   background-image: url("../assets/tug-of-war.png");
   background-size: 200px 250px;
   background-position: top;
-  box-shadow: 12px 12px #8298f5;
+  box-shadow: 12px 12px #ee7772;
 }
 .projects-wrapper a:nth-of-type(5) .card_wrapper {
   background-image: url("../assets/vr-therapy.png");
-  box-shadow: 12px 12px #ee7772;
+  box-shadow: 12px 12px #8298f5;
 }
 .projects-wrapper a:nth-of-type(6) .card_wrapper {
   background-image: url("../assets/postureAlert.jpeg");
@@ -611,7 +611,7 @@ textarea:valid ~ label {
 
   .about-info {
     grid-area: first;
-    max-width: 560px;
+    max-width: 650px;
   }
 
   .about-info h1 {
@@ -629,7 +629,6 @@ textarea:valid ~ label {
   }
 
   .pic {
-    margin-left: 5%;
   }
 
   .project-grid {
@@ -783,7 +782,6 @@ textarea:valid ~ label {
   }
 
   .pic {
-    margin-left: 5%;
   }
 
   .project-grid {
