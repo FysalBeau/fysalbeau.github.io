@@ -636,8 +636,8 @@ textarea:valid ~ label {
   .pic {
   }
 
-  .project {
-    padding-top: 75px;
+  .projects {
+    padding-top: 60px;
   }
 
   .project-grid {
@@ -684,7 +684,7 @@ textarea:valid ~ label {
     height: 400px;
   }
   .contact {
-    margin-top: 120px;
+    margin-top: 140px;
   }
 
   .contact h1 {
