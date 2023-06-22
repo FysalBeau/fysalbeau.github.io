@@ -625,7 +625,7 @@ textarea:valid ~ label {
   }
 
   .about-info p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: regular;
   }
 
@@ -1015,6 +1015,10 @@ textarea:valid ~ label {
 
   .projects-wrapper a {
     margin-bottom: 100px;
+  }
+
+  .card_wrapper{
+    height:500px;
   }
 
   .project_summary {
