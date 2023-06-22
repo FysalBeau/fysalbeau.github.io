@@ -260,7 +260,7 @@ section {
 }
 
 .about {
-  margin: 10%;
+  /* margin: 10%; */
   text-align: center;
 }
 
@@ -338,7 +338,7 @@ section {
   justify-content: space-around;
 }
 
-.card_wrapper:hover{  
+.card_wrapper:hover {
   transform: translate3d(0, -5px, 0);
 }
 
@@ -359,7 +359,6 @@ section {
 .projects-wrapper a:nth-child(1) .card_wrapper {
   background-image: url("../assets/mkrsunion.png");
   box-shadow: 12px 12px #f5bf44;
-  
 }
 .projects-wrapper a:nth-child(2) .card_wrapper {
   background-image: url("../assets/Papercrane-1.png");
@@ -604,6 +603,12 @@ textarea:valid ~ label {
     top: 30px;
   }
 
+  .about {
+    padding-top: 150px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
   .about-grid {
     grid-auto-columns: 1fr 1fr;
     grid-template-areas: "first second";
@@ -629,6 +634,10 @@ textarea:valid ~ label {
   }
 
   .pic {
+  }
+
+  .project {
+    padding-top: 75px;
   }
 
   .project-grid {
@@ -673,6 +682,9 @@ textarea:valid ~ label {
   #myVideo {
     width: 700px;
     height: 400px;
+  }
+  .contact {
+    margin-top: 120px;
   }
 
   .contact h1 {
@@ -931,13 +943,11 @@ textarea:valid ~ label {
   }
 
   .profile {
-    width: 280px;
+    width: 330px;
   }
 
   .hero-box-wrapper {
     margin-top: 15%;
-    margin-left: 7%;
-    margin-right: 7%;
     margin-bottom: 15%;
     padding: 5%;
     display: flex;
@@ -945,6 +955,11 @@ textarea:valid ~ label {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  img.profile {
+    padding-bottom: 20px;
+  }
+
   .hero-info h1 {
     font-size: 40px;
     font-weight: bolder;
@@ -956,7 +971,6 @@ textarea:valid ~ label {
   .hero-info p {
     font-size: 20px;
     font-weight: regular;
-    margin-bottom: 40px;
   }
   .hero-info p2 {
     font-size: 20px;
@@ -964,13 +978,14 @@ textarea:valid ~ label {
 
   .button-wrapper {
     margin-top: 5%;
-    width: ;
+  }
+
+  .btn-1 {
+    width: 330px;
   }
 
   .about {
     margin-top: 15%;
-    margin-left: 7%;
-    margin-right: 7%;
     margin-bottom: 15%;
   }
 
@@ -984,6 +999,8 @@ textarea:valid ~ label {
 
   .pic {
     margin-top: 8%;
+    width: 360px;
+    height: 360px;
   }
 
   .project-grid {
@@ -994,6 +1011,14 @@ textarea:valid ~ label {
       "three"
       "four"
       "five";
+  }
+
+  .projects-wrapper a {
+    margin-bottom: 100px;
+  }
+
+  .project_summary {
+    padding: 0px;
   }
 
   .project-info {
@@ -1035,8 +1060,7 @@ textarea:valid ~ label {
   .contact-info {
     margin-top: 15%;
     margin-bottom: 15%;
-    margin-left: 7%;
-    margin-right: 7%;
+    width: 360px;
   }
   .contact h1 {
     display: flex;
@@ -1056,7 +1080,6 @@ textarea:valid ~ label {
   }
 
   .form-wrapper {
-    margin: 5%;
     padding-top: 10%;
   }
 
