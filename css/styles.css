@@ -359,30 +359,32 @@ section {
   background-image: url("../assets/mkrsunion.png");
   box-shadow: 12px 12px #f5bf44;
 }
-.projects-wrapper a:nth-child(2) .card_wrapper {
-  background-image: url("../assets/Papercrane-1.png");
-  background-size: 80%;
-  background-position: top;
-  box-shadow: 12px 12px #93caac;
-}
-
-.projects-wrapper a:nth-of-type(3) .card_wrapper {
+.projects-wrapper a:nth-of-type(2) .card_wrapper {
   background-image: url("../assets/Alphabody-1.png");
   background-size: 80%;
   background-position: top;
   box-shadow: 12px 12px #ee7772;
 }
 
-.projects-wrapper a:nth-of-type(4) .card_wrapper {
+.projects-wrapper a:nth-of-type(3) .card_wrapper {
+  background-image: url("../assets/vr-therapy.png");
+  box-shadow: 12px 12px #8298f5;
+}
+
+.projects-wrapper a:nth-child(4) .card_wrapper {
+  background-image: url("../assets/Papercrane-1.png");
+  background-size: 80%;
+  background-position: top;
+  box-shadow: 12px 12px #93caac;
+}
+
+.projects-wrapper a:nth-of-type(5) .card_wrapper {
   background-image: url("../assets/tug-of-war.png");
   background-size: 200px 250px;
   background-position: top;
   box-shadow: 12px 12px #ee7772;
 }
-.projects-wrapper a:nth-of-type(5) .card_wrapper {
-  background-image: url("../assets/vr-therapy.png");
-  box-shadow: 12px 12px #8298f5;
-}
+
 .projects-wrapper a:nth-of-type(6) .card_wrapper {
   background-image: url("../assets/postureAlert.jpeg");
   background-size: 80%;
@@ -1012,7 +1014,20 @@ footer {
     width: 360px;
     height: 360px;
   }
-
+  /*
+  BAND-AID SOLUTION - DISABLED FADE-IN AFFECT FOR PROJECTS
+  BUG WITH MOBILE VIEW OF PROJECTS SECTION
+  FADE-IN NEVER TRIGGERS 
+  */
+  .projects{
+    transition: opacity 750ms ease-in;
+    opacity: 1;
+  }
+   /*
+  BAND-AID SOLUTION - DISABLED FADE-IN AFFECT FOR PROJECTS
+  BUG WITH MOBILE VIEW OF PROJECTS SECTION
+  FADE-IN NEVER TRIGGERS 
+  */
   .project-grid {
     grid-auto-columns: 1fr;
     grid-template:
