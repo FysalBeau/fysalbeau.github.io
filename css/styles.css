@@ -1019,10 +1019,10 @@ footer {
   BUG WITH MOBILE VIEW OF PROJECTS SECTION
   FADE-IN NEVER TRIGGERS 
   */
-  .projects{
+  /* .projects{
     transition: opacity 750ms ease-in;
     opacity: 1;
-  }
+  } */
    /*
   BAND-AID SOLUTION - DISABLED FADE-IN AFFECT FOR PROJECTS
   BUG WITH MOBILE VIEW OF PROJECTS SECTION
