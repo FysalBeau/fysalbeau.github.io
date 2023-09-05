@@ -266,7 +266,7 @@ section {
 
 .about-grid {
   display: grid;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   place-items: center;
   grid-auto-columns: 1fr;
 }
@@ -337,7 +337,6 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .card_wrapper:hover {
   transform: translate3d(0, -5px, 0);
 }
@@ -515,14 +514,14 @@ textarea:valid ~ label {
   flex-basis: 48%;
 }
 
-.footer {
+footer {
   position: relative;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*
@@ -578,10 +577,11 @@ textarea:valid ~ label {
   }
 
   .hero-box-wrapper {
-    margin-top: 7%;
+    margin: 7% auto 0%;
+    /* margin-top: 7%;
     margin-left: 7%;
-    margin-right: 9.5%;
-    max-width: 1450px;
+    margin-right: 9.5%; */
+    max-width: 1250px;
   }
 
   .hero-text-wrapper {
@@ -626,7 +626,7 @@ textarea:valid ~ label {
 
   .about-info {
     grid-area: first;
-    max-width: 650px;
+    max-width: 600px;
   }
 
   .about-info h1 {
@@ -1027,8 +1027,8 @@ textarea:valid ~ label {
     margin-bottom: 100px;
   }
 
-  .card_wrapper{
-    height:500px;
+  .card_wrapper {
+    height: 500px;
   }
 
   .project_summary {
