@@ -238,30 +238,1597 @@
         </div>
         <div class="project2-info">
           <div class="project-info">
-            <h2>Mkrs Union</h2>
-            <p>
+            <h1 class="info-title">Mkrs Union</h1>
+            <p class="info-desc">
               Mkrs Union is a makerspace manager web app for the Taylor Family
               Digital Library Makerspace.
             </p>
+            <br />
+            <h1 class="video-title">Demo Video</h1>
+            <br />
             <div class="video">
               <video
                 id="myVideo"
                 controls
-                poster="assets/thumbnail.png"
+                poster="../assets/thumbnail.png"
                 style="width: 800px"
               >
                 <source src="../video/mkrsunion.mp4" type="video/mp4" />
               </video>
             </div>
-            <div class="mock1">
-              <img src="../assets/mock1.png" width="420" height="280" />
+            <br />
+            <div class="mock-wrapper">
+              <div class="mock1">
+                <img src="../assets/mock1.png" width="305" height="218" />
+              </div>
+              <div class="mock2">
+                <img src="../assets/mock2.png" width="305" height="218" />
+              </div>
+              <div class="mock3">
+                <img src="../assets/mock3.png" width="305" height="218" />
+              </div>
             </div>
-            <div class="mock2">
-              <img src="../assets/mock2.png" width="420" height="280" />
-            </div>
-            <div class="mock3">
-              <img src="../assets/mock3.png" width="420" height="280" />
-            </div>
+            <br />
+            <h3>Final Portfolio for Makerspace Management System</h3><br>
+            <iframe
+              src="/../assets/mkrsPortfolio.pdf"
+              width="80%"
+              height="920px"
+            >
+              <p>
+                Your browser does not support inline PDF viewing. You can
+                download the PDF
+                <a
+                  href="/../assets/mkrsPortfolio.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >here</a
+                >.
+              </p>
+            </iframe>
+
+            <!-- <h3><b>Authors:</b></h3>
+            Fysal Beauferris<br />
+            Emily Baird<br />
+            Donald Murataj<br />
+            Britney Phan <br />
+            Arantxa Arteaga Castaneda<br />
+            <br /> -->
+            <!-- <h1>Table of Contents</h1>
+            <ul style="list-style-type: none; padding: 0">
+              <li>
+                <a href="#s1">Section 1: Identification and Requirements</a>
+                <ul style="list-style-type: none; padding: 0">
+                  <li><a href="#p0">Phase 0: Setting the stage</a></li>
+                  <li><a href="#p01">0.1 Background Environment</a></li>
+                  <li>
+                    <a href="#p02"
+                      >0.2 What the system will be used for and general
+                      expectations that the system should satisfy</a
+                    >
+                  </li>
+                  <li><a href="#p03">0.3 System Constraints</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#p1">Phase 1: Identification</a>
+
+                <ul style="list-style-type: none; padding: 0">
+                  <li><a href="#p11">1.1 Expected types of users</a></li>
+                  <li><a href="#p12">1.2 Work contexts</a></li>
+                  <li>
+                    <a href="#p13"
+                      >1.3 Approach for getting background information</a
+                    >
+                  </li>
+                  <li><a href="#p14">1.4 Concrete tasks examples</a></li>
+                </ul>
+              </li>
+              <li><a href="#p2">Phase 2: Tentative List of Requirements</a></li>
+              <li>
+                <a href="#s2"
+                  >Section 2: The first prototype and walk through</a
+                >
+
+                <ul style="list-style-type: none; padding: 0">
+                  <li><a href="#p3">Phase 3: Prototyping</a></li>
+                  <li>
+                    <a href="#p4">Phase 4: Team discussions and Walkthrough</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Section 3: Redesign Rationale
+                <ul style="list-style-type: none; padding: 0">
+                  <li>Phase 5: Medium Fidelity Illustrations:</li>
+                </ul>
+              </li>
+              <li>Section 4: Vertical Prototype Illustrations</li>
+              <li>Section 5: Heuristic Evaluation</li>
+              <li>Section 6: Final Design Rational and Discussion</li>
+              <li>Appendix I: Initial Prototypes</li>
+              <li>Appendix II: Final Low Fidelity Prototype</li>
+              <li>Appendix III: Citations and References</li>
+            </ul> -->
+            <!-- <br />
+            <h1 id="s1">Section 1: Identification and Requirements</h1>
+            <br />
+            <h2 id="p0">Phase 0: Setting the stage</h2>
+            <br />
+            <p>
+              <b id="p01">0.1 Background Environment</b><br /><br />Many
+              students at the University of Calgary frequently visit the Taylor
+              Family Digital Library (TFDL) for a variety of reasons such as
+              renting out books, studying, catching up with friends, and working
+              on group projects. One of the less well-known services at TFDL is
+              the makerspace located on the third floor. Via the makerspace,
+              students and faculty can use a variety of tools and machines that
+              they otherwise would not have access to, such as 3D printers,
+              vinyl cutters, and CNC routers.<br /><br />
+              Though there is an existing webpage and a variety of online
+              resources for the TFDL makerspace, they are difficult to navigate.
+              For library staff, the current solution often forces them to
+              create individual custom solutions for specific problems, such as
+              the need for an online portion of the space orientation during
+              COVID. The fact that these tasks are hosted across the web means
+              that they are not easily integrated with the TFDL website, and
+              makes it difficult for end users to find all the information and
+              resources they need. For example, currently, there is no way to
+              book equipment, one must show up and hope that the machines they
+              want to use are vacant. Additionally, certain tasks such as
+              signing up for classes or workshops, are rolled into the larger
+              TFDL system even in cases where they are not a great fit. Finally,
+              the space is poorly advertised and there is little opportunity to
+              engage with other makers, which seems to users like a missed
+              opportunity especially given the community-oriented nature of the
+              space. Overall, there are a lot of missing features and gaps in
+              the current offering which we hope our system will fill.<br /><br />
+              <b id="p02"
+                >0.2 What the system will be used for and general expectations
+                that the system should satisfy</b
+              >
+              <br /><br />
+              Our aim is to create a management system to help makerspace users
+              better navigate the process of learning about and using the space.
+              This web application will allow both beginners and experienced
+              veterans to book equipment, register for events where you learn or
+              connect with the wider community of makers at TFDL. For library
+              staff, the goal of the system is to help them 6 complete the parts
+              of their job that are specific to the makerspace, and reduce their
+              need to have domain-specific knowledge about how to run the space.
+              In general, the system should function as a centralized online hub
+              for both users and managers of the makerspace. It should reduce
+              the need for makerspace-specific tasks to rely on outside
+              solutions, but in scenarios where outside solutions do work well,
+              the app should handle them gracefully and ensure they are easy to
+              find and use within the context of the larger system.
+            </p>
+            <br />
+            <b id="p03">0.3 System Constraints</b>
+            <br /><br />
+            There are a number of constraints to take into account when
+            developing a system for the TFDL makerspace. First, the system
+            should integrate well with the TFDL website. Whatever solution we
+            develop needs to provide a seamless experience for users who
+            discover the space via the TFDL, including scenarios where the TFDL
+            advertises or promotes its makerspace offerings, and thus we want to
+            avoid creating a system which requires users to download an external
+            app or using any kind of specialized hard- or software.
+            Additionally, the system needs to be easy for library staff and
+            university IT personnel to maintain, and should introduce minimal
+            complexity on top of their existing solutions. Together, these
+            concerns led us to choose a web application as the best fit for the
+            incoming makerspace management system.
+            <br />
+            <br />
+            <h1 id="p1">Phase 1: Identification</h1>
+            <br />
+            <b id="p11">1.1 Expected types of users</b><br />
+            <br />
+            The expected type of users for this application are mainly expected
+            to be students looking to use the makerspace and the tools in it for
+            basic manufacturing or prototyping abilities for classes, startups,
+            hobbies and so on. However, other users can include university
+            faculty and staff. The typical users can range from being highly
+            experienced to having little to no experience.<br /><br />
+            <b id="p111">1.1.1 Inexperienced Makerspace Users</b><br /><br />
+            This category of users are interested in using the makerspace, but
+            are not necessarily familiar with the tools and skills required.
+            They can be either students or faculty. The inexperienced users are
+            likely to benefit from things such as introductory workshops and
+            full-service or guided experiences.<br /><br />
+            <b id="p112">1.1.2 Experienced Makerspace Users</b>
+            <br /><br />
+            This category of users already has experience in the makerspace and
+            likely has a specific set of knowledge and skills on particular
+            machines. Again, these users could come from any part of the
+            university community. They are self-sufficient and know what they
+            want out of their experience at the space.
+            <br /><br />
+            <b id="p12">1.2 Work contexts</b><br /><br />
+            Students using the makerspace range both in experience level as well
+            as intention for use of the space. From beginners to veterans with
+            lots of experience using the various machinery offered in the
+            workspace, a variety of students are there to work on both personal
+            and school related projects. Typically, students use the space to
+            take advantage of machinery that is not easily accessible outside of
+            the workspace such as the 3D printers and the CNC Milling Machine.
+            <br /><br />
+            Faculty members including students working in research positions are
+            also users of the makerspace. Similar to that of regular students,
+            faculty members typically use the space to take advantage of
+            machinery that is not easily accessible outside of the workspace.
+            However, the work setting may differ as most faculty members using
+            the space are doing so for a set purpose and not for hobby. Most
+            faculty are there to work on projects related to their research
+            under the university or projects that will be used for teaching
+            purposes such as projects for class demonstration.
+            <br /><br />
+            <b id="p13">1.3 Approach for getting background information</b>
+            <br /><br />
+            We developed our tasks using a variety of representatives. Some of
+            our team members have used the makerspace before, so we used their
+            opinions to validate our choices of these tasks. We have also asked
+            friends who have experience in the makerspace community including a
+            few who have used the TFDL makerspace in the past. In addition to
+            that, we also emailed the staff of the makerspace in the TFDL in
+            regards to how they run the space to get their thoughts as well. In
+            creating each user and their task, we combined experiences from each
+            of these sources.<br /><br />
+            <b id="p14">1.4 Concrete tasks examples</b><br /><br />
+            Below are the tasks that we consider to be important for our
+            management app.
+            <br /><br />
+            <b id="p141">1.4.1 Task 1: New User Going through Orientation</b
+            ><br /><br />
+            Joey wants to start using the makerspace. He goes to the TFDL
+            webpage and reads the overview, and finds that there is a link to a
+            safety orientation that all users must complete before they can use
+            the space. He clicks the link and is taken to the TFDL's events
+            calendar. He scrolls through the library's events, including lots
+            that aren't related to the makerspace, and eventually finds a time
+            slot that works with his schedule. He fills out the form on the TFDL
+            website with his name and email, and registers for the class. Joey
+            is sent a confirmation email to tell him that he has successfully
+            registered. If the class is online, the email includes a video
+            conferencing link.
+            <br /><br />
+            This task is something that would be done by any new user of the
+            makerspace, as a safety orientation class is required for all new
+            users. For existing makerspace users, the task of booking a class
+            may come up whenever the space is offering specific programming that
+            the user is interested in. For this reason, booking classes is a
+            frequent and important task for all space users.
+            <br /><br />
+            <b id="p142"
+              >1.4.2 Task 2: Checking if a machine is out of service</b
+            ><br /><br />
+            Ashley, a student at the University of Calgary, has been working on
+            a series of carvings for her upcoming art exhibit. Newly inspired,
+            she comes with a freshly concocted design for the centerpiece she
+            has been missing. She rushes to the TFDL makerspace to use the CNC
+            Milling Machine she has grown accustomed to operating to create her
+            carvings over the last several months. To her dismay, she notices
+            the machine is not working. She tries to troubleshoot the issue, but
+            quickly gives up. In a panic, knowing she only has a week to create
+            the perfect centerpiece, and not having planned for the Milling
+            Machine to be broken, she immediately contacts the TFDL makerspace
+            staff and a member is sent out to inspect the situation. After
+            inspection, the staff member informs Ashley that the CNC Milling
+            Machine is broken and it is going to take the team two weeks to
+            repair the machine. Ashley, in a frenzy by the state of the
+            situation, leaves the makerspace, now knowing she must find a
+            replacement machine in time for her exhibit.
+            <br /><br />
+            The expected user for this task is the students tasked with
+            operating the makerspace who have either encountered out-of-service
+            equipment or have been informed by other students, faculty or other
+            staff members of equipment malfunction. This task will be done
+            infrequently, but it is still important as users who are using the
+            machine next will have to be informed that they will be unable to
+            work on their projects when the machine is out-of-service.<br /><br />
+            <b id="p143"
+              >1.4.3 Task 3: User creates a full-service job request</b
+            ><br /><br />
+            Eddy is interested in 3D printing a phone stand, but does not have
+            the time nor experience using the 3D printer provided by the TFDL
+            makerspace. He overhears from a friend that there is a full-serve 3D
+            printing service provided by TFDL and quickly navigates to the
+            website. Eddy is met with an encyclopedia's worth of information
+            presented to him pertaining to Q/A of how the full-serve 3D printing
+            process works as well as 3D printing policies. Eddy is not the most
+            technologically inclined individual nor the most patient and quickly
+            gets annoyed, thinking to himself “Where's the button to get
+            started!”. He is unaware that hidden deep within the text of a
+            paragraph section towards the bottom of the webpage is a hyperlink
+            to an online form for full-service 3D printing. Eddy gives up and
+            closes the webpage.
+            <br /><br />
+            Later, he asks his friend to help him navigate the process of
+            setting up a self-serve print. His friend helps him find the link,
+            and Eddy is able to fill out the steps of uploading his 3D model,
+            picking the scale of the print, and making decisions about the color
+            and type of material that should be used. He finishes the setup for
+            the print job and receives a confirmation email telling him that his
+            model is in queue. Eventually, Eddy receives another email telling
+            him that his print job is ready to pick up at the library. He heads
+            down to the makerspace to get his new phone stand.
+            <br /><br />
+            The expected user of this task is someone that has already attended
+            a safety orientation and is qualified to use the makerspace, but is
+            not necessarily a dedicated maker or user of the space. They may not
+            have the technical expertise or tinkering ability to set up their
+            own 3D print. This task would be done whenever the user wants to use
+            the full-service 3D print option. It is considered important as the
+            user will need to complete this task to specify what they want for
+            the print job so the staff will have the information to complete
+            this job.
+            <br /><br />
+            <b id="p144"
+              >1.4.4 Task 4: Checking if a machine is booked by someone else</b
+            ><br /><br />
+            Josh wants to use the 3D printer but when he gets to TFDL there is
+            someone already printing something. Josh leaves the makerspace and
+            finds a way to pass time while waiting for the other person to
+            finish. When Josh comes back, the other person is still printing for
+            an obnoxiously long time and it is nearing closing time. Knowing
+            that printers can not be left unattended, and that all print jobs
+            must be initiated with enough time to finish before closing,Josh
+            gets impatient and angry. He leaves the makerspace and decides to
+            come back sometime later.<br /><br />
+            Current users of the makerspace who have finished orientation would
+            be frequently checking if machines are available for use, something
+            that would be highly important if you want to use a machine.
+            However, the current system in TFDL for using machines frustrates
+            Josh as he is unable to check when machines are free, busy, or
+            out-of-service.
+            <br /><br />
+            <b id="p145">1.4.5 Task 5: Experienced User 3D Prints Figurines</b
+            ><br /><br />
+            Jessica is a third year student on the university’s soccer team who
+            has a hidden talent for making 3D models. Jessica frequently visits
+            the TFDL makerspace in order to print off her figurines, so many of
+            the library staff are well acquainted with her. Upon arrival,
+            Jessica is greeted by Jaime, who is one of the staff on the third
+            floor of TFDL. Jaime knows Jessica is experienced with 3D printers,
+            but as a formality, she mentions that she would like to do a
+            self-serve print. Jaime tells Jessica that the third printer is not
+            being used, so she may log on to the desktop computer to begin her
+            printing.
+            <br /><br />
+            Being fully certified to use the printer, Jessica walks over to one
+            of the available computers next to her assigned machine and logs on
+            to her google drive where her 3D models are saved. After hitting
+            print, the process begins and Jessica is now left waiting for 2
+            hours. Printers cannot be left unattended, so Jessica waits in the
+            space on her laptop, occasionally checking the job to make sure
+            everything is working properly. Eventually, she finishes the print,
+            cleans up the machine, and logs off the computer.
+            <br /><br />
+            The expected user for this task is anyone with at least some
+            experience using the machines in the makerspace. A user like Jessica
+            taking on this task is quite frequent, since few students know about
+            the TFDL makerspace, so if someone does know about it, they are
+            likely to have experience in makerspaces beforehand. Supporting
+            users like Jessica is especially important as they make up the
+            community of the makerspace and they are the ones who can provide
+            assistance for their inexperienced peers.
+            <br /><br />
+            <h1 id="p2">Phase 2: Tentative List of Requirements</h1>
+            <br /><br />
+            <h2 id="p21">2.1 Absolutely Must Include</h2>
+            <br />
+            <ul>
+              <li>
+                <b>Register for an orientation workshop:</b> This is something
+                that all users must do in order to use the space at all. It is a
+                pain point in the current system as users are required to search
+                through lots of irrelevant data, so it is a high priority for
+                the new system.
+              </li>
+              <br />
+              <li>
+                <b>Book a time slot to use a machine:</b> Machine bookings are
+                not currently supported in the current system, but would help
+                users in many situations, especially post-COVID when trips to
+                campus are more common. Knowing that a machine will be available
+                and ready when needed is a major improvement over the existing
+                solutions.
+              </li>
+              <br />
+              <li>
+                <b>Send a model to staff for full-service printing:</b> Our
+                system must cater to the needs of users with various experience
+                levels. Support for staff-assisted 3D printing is vital for the
+                class of users who are newer or not yet self-sufficient.
+              </li>
+            </ul>
+            <br />
+            <h2 id="p22">2.2 Should Include</h2>
+            <br />
+            <ul>
+              <li>
+                <b
+                  >Incorporate existing online learning resources for easy
+                  access:</b
+                >
+                There are some functional online resources developed by the
+                makerspace, of which redoing them is out of scope. However, it
+                would be very helpful to have a centralized location where users
+                can find and access these external resources.
+              </li>
+              <br />
+              <li>
+                <b>Get reminders about a machine booking or a workshop:</b> This
+                is functionality to support the must-include tasks of
+                registering for workshops and booking time on a machine. It can
+                potentially be very simple, such as an email notification, and
+                provides high value, so it is a good candidate for inclusion.
+              </li>
+              <br />
+            </ul>
+            <br />
+            <h2 id="p23">2.3 Could Include</h2>
+            <br />
+            <ul>
+              <li>
+                <b
+                  >Request or show interest in a workshop that is not currently
+                  offered: </b
+                >Currently, when no orientation workshops are available, there
+                is no built-in way to express interest. While this functionality
+                would make the system more robust, it is not necessary as there
+                are other ways to solve the problem such as emailing library
+                staff.
+              </li>
+              <br />
+              <li>
+                <b
+                  >Get live updates about a full-service print job in
+                  progress:</b
+                >
+                Though this feature would potentially be a good candidate for
+                future iterations of the system, it is not necessary for the
+                initial product and adds significant complexity.
+              </li>
+              <br />
+              <li>
+                <b
+                  >Notify makerspace patrons of machine’s deemed out of
+                  service:</b
+                >
+                Similar to getting live updates about a full-service print job
+                in progress, this feature would potentially be a good candidate
+                for future iterations of the system, however it is not necessary
+                for the initial product and adds significant complexity.
+              </li>
+              <br />
+            </ul>
+            <br />
+            <h2 id="p24">2.4 Exclude</h2>
+            <br />
+            <ul>
+              <li>
+                <b>Display completion of workshops on your user profile:</b> We
+                expect booking to be the main functionality of the system, and
+                thus complex user profiles are not necessary.
+              </li>
+              <br />
+              <li>
+                <b>Get certified to use a machine or tool:</b> The main focus of
+                the system is to give users the ability to book in-person
+                experiences such as workshops and machine times. Creating
+                digital certification content is out of scope.
+              </li>
+              <br />
+              <li>
+                <b>Community features: </b>While it would be really interesting
+                to include community aspects such as the ability to share
+                projects or connect with other users, this is also outside of
+                the scope of the system.
+              </li>
+            </ul>
+            <br />
+            <h1 id="s2">Section 2: The first prototype and walk through</h1>
+            <br />
+            <h2 id="p3">Phase 3: Prototyping</h2>
+            <br />
+            For our prototyping methodology, each individual in our group
+            developed their own prototypes. These early prototyping examples can
+            be found in Appendix I: Initial Prototypes. From those rough
+            designs, we cherry-picked the qualities that we liked and amassed
+            them together to create an alpha prototype (Figures 13.1 - 13.5,
+            Appendix I). Following the re-evaluation of that prototype, we made
+            some changes to it focusing on having more visuals and making it
+            more interactive (Figure 14, Appendix I), rather than constraining
+            the design to a static format with simple scrolling and clicking.<br /><br />
+            For the final prototype, we decided to keep some elements from the
+            designs we had for “booking a machine” and “booking workshops” and
+            further expand on them.<br /><br />
+            <h2 id="p4">Phase 4: Team discussions and Walkthrough</h2>
+            <br />
+            The following walkthroughs were done to create the prototype
+            presented in Appendix II: Final Prototype (Figures 13 - 14, Appendix
+            I). The issues encountered in this walkthrough were fixed to create
+            the final prototype.<br /><br />
+            <h3 id="p41">4.1 Task 1: New User Going through Orientation</h3>
+            <br />
+            <table border="1">
+              <tr>
+                <th>Description of Step</th>
+                <th>Does the user have the knowledge/training to do this?</th>
+                <th>
+                  Is it believable that they would do it? Are they motivated?
+                </th>
+                <th>Comment/solution</th>
+              </tr>
+              <tr>
+                <td>Go to makerspace website</td>
+                <td>Low knowledge.</td>
+                <td>High motivation.</td>
+                <td>
+                  Joey is motivated to enter the webpage when interested in
+                  using the makerspace, however he might not know that he must
+                  browse the library website to use the makerspace.
+                  <b>Solution:</b> Ask the library staff to promote the
+                  makerspace on their webpage.
+                </td>
+              </tr>
+              <tr>
+                <td>Navigate to ‘Book Workshop’ tab</td>
+                <td>High knowledge.</td>
+                <td>Medium motivation.</td>
+                <td>
+                  The library webpage indicates he should register for a safety
+                  orientation before he can do anything else. His motivation is
+                  medium because even though he would rather use the makerspace
+                  right away, he knows he must register for an orientation for
+                  safety reasons.
+                </td>
+              </tr>
+              <tr>
+                <td>Select a workshop date</td>
+                <td>High-medium knowledge.</td>
+                <td>Highly believable, medium motivation.</td>
+                <td>
+                  Although the Booking tab states this workshop should
+                  specifically be an orientation, the Events tab does not, so it
+                  may lower Joey’s motivation to go back to confirm what type of
+                  workshop he must register for. Also, if Joey does not find a
+                  workshop that fits his schedule, this will lower the
+                  motivation to use the makerspace.
+                  <b>Solution:</b> Add asynchronous orientation link to the
+                  Events tab.
+                </td>
+              </tr>
+              <tr>
+                <td>Click register</td>
+                <td>High knowledge.</td>
+                <td>Highly believable and high motivation.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Enter name</td>
+                <td>High knowledge.</td>
+                <td>Highly believable and high motivation.</td>
+                <td>
+                  Joey is prompted to enter his name, and he is motivated to do
+                  so to provide his information to the workshop staff.
+                </td>
+              </tr>
+              <tr>
+                <td>Enter email</td>
+                <td>High knowledge.</td>
+                <td>Highly believable and high motivation.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Enter UCID</td>
+                <td>High knowledge.</td>
+                <td>High-medium motivation.</td>
+                <td>
+                  Joey is prompted to enter his UCID, and he is motivated to do
+                  so to provide his information to the workshop staff. However,
+                  it could be the case that Joey does not have a UCID and
+                  therefore cannot use the makerspace.
+                  <b>Solution:</b> Add a notice reminding users that only
+                  students, faculty, and staff are allowed to use the
+                  makerspace.
+                </td>
+              </tr>
+              <tr>
+                <td>Click register</td>
+                <td>High knowledge.</td>
+                <td>High motivation and highly believable.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Read confirmation details</td>
+                <td>High knowledge.</td>
+                <td>High motivation.</td>
+                <td>
+                  <b>Problem:</b> the day of the week is not displayed in the
+                  details. Since most people organize their schedules thinking
+                  of days of the week, not showing one is a disadvantage of the
+                  system. <b>Solution:</b> display the day of the week for
+                  workshop events.
+                </td>
+              </tr>
+              <tr>
+                <td>Export event to a personal calendar</td>
+                <td>High knowledge.</td>
+                <td>
+                  This step is optional, so the motivation depends on the user.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click OK</td>
+                <td>High knowledge.</td>
+                <td>High motivation, highly believable.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <b>Other comments: </b>- Including a login in this task could
+                  be useful to save the completion of the orientation for each
+                  user, although it is not necessary for other steps of this
+                  task. <br />
+                  <b>Pros:</b><br />
+                  - Not a lot of navigation required to complete the task.<br />
+                  - Steps for registering are clear and believable for the user
+                  to achieve. This helps ease the already tedious necessity to
+                  complete a safety orientation.<br />
+                  - Being able to export the event to a personal calendar makes
+                  it easier for the user to schedule.<br />
+                  <b>Cons:</b><br />
+                  - Users are not aware they should complete the workshop if
+                  they do not try to book a machine from the makerspace. A
+                  welcome message or pop-up to new users could solve this
+                  problem.<br />
+                  - No alternative is provided if users do not find an
+                  orientation workshop that fits their schedule.<br />
+                  - Dates for workshops do not include the day of the week which
+                  might be inefficient for the users.<br />
+                  - Users are not aware they must be students, faculty or staff
+                  to use the makerspace until they try to register for a
+                  workshop. A warning in the events page or the booking page
+                  could solve this.
+                </td>
+              </tr>
+            </table>
+            <br />
+            <h3>4.2 Task 2: Discovering a machine is out of service</h3>
+            <br />
+            <table border="1">
+              <tr>
+                <th>Description of Step</th>
+                <th>Does the user have the knowledge/training to do this?</th>
+                <th>
+                  Is it believable that they would do it? Are they motivated?
+                </th>
+                <th>Comment/solution</th>
+              </tr>
+              <tr>
+                <td>Go to makerspace website</td>
+                <td>Yes.</td>
+                <td>Yes, seeing as this is not too difficult of a task.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Log in using UCID</td>
+                <td>Yes.</td>
+                <td>Yes.</td>
+                <td>It may be better to just ask for UCID upon booking.</td>
+              </tr>
+              <tr>
+                <td>Navigate to Booking tab</td>
+                <td>
+                  There is a possibility that she would be expecting a
+                  “machines” tab, but seeing as that does not exist, this would
+                  be the intuitive place to go.
+                </td>
+                <td>
+                  Yes, there is no scrolling required, it is one of the first
+                  things you should see on the screen as it is on the top left.
+                </td>
+                <td>
+                  This may be accelerated if we have notifications that tell you
+                  when one of your frequently used machines is out of order.
+                  Could also just be a list of all out of order machines since
+                  we are still contemplating on having a login.
+                </td>
+              </tr>
+              <tr>
+                <td>Selecting the milling machine</td>
+                <td>
+                  She is used to using a milling machine so she knows what it
+                  looks like without even needing to hover over.
+                </td>
+                <td>
+                  It is right in the middle of the screen, no scrolling
+                  required, so yes.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click left or right arrows to select a week</td>
+                <td>
+                  She is used to doing this on many apps including the
+                  university schedulebuilder, so she should know how.
+                </td>
+                <td>
+                  She is so used to it by now that it should take little to no
+                  difficulty.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Looking at the day and hours that she would like to use it
+                </td>
+                <td>Yes, this is intuitive.</td>
+                <td>Yes.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Seeing the whole day grayed out and hovering over it</td>
+                <td>
+                  Even if she did not, her first reaction would be to try and
+                  click on her date of choice.
+                </td>
+                <td>
+                  Yes, she would try to click on the day to get her booking and
+                  the message would appear first.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Being unable to click and reading the message from hovering
+                  that says unavailable
+                </td>
+                <td>
+                  Anyone familiar with using any application is used to hovering
+                  over odd occurrences, most of the time it is because they try
+                  to click on it and the message appears before they click.
+                </td>
+                <td>
+                  Yes, it is a short, single-line message, so reading it takes
+                  almost no effort.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Choosing another day in the future to book</td>
+                <td>
+                  Intuitively, seeing other spaces that week that are not grayed
+                  out would signal to choose another day.
+                </td>
+                <td>
+                  Having to look for another open day is rather annoying if it
+                  is many weeks in the future.
+                </td>
+                <td>
+                  If the whole week is grayed out and the machine is out of
+                  order for many weeks, it might be better to include the next
+                  available date in the out of order message, that way she
+                  doesn’t have to click right a bunch of times to find the next
+                  available week.
+                </td>
+              </tr>
+              <tr>
+                <td>Hover over an available time slot</td>
+                <td>
+                  Yes because this would happen while she tries to click on it.
+                </td>
+                <td>
+                  Yes because this would happen while she tries to click on it
+                  and she wants to click to use the machine.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click the desired timeslot</td>
+                <td>Yes.</td>
+                <td>
+                  Medium motivation. Since times are adjustable, they may or may
+                  not click the desired time slot.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Double-check booking details</td>
+                <td>Yes.</td>
+                <td>
+                  Yes, she is an experienced user and knows the importance of
+                  booking enough time for the job.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click ‘Confirm Booking’</td>
+                <td>Yes.</td>
+                <td>Yes.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click ‘Export booking to Google Calendar’ (optional)</td>
+                <td>
+                  Yes. Experience is not required as the button describes
+                  itself.
+                </td>
+                <td>
+                  Medium. Depends on the user’s preferences, as this is a fully
+                  optional step.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <b>Other comments or problems we encountered: </b><br />
+                  - It may be beneficial to have a notification if any machines
+                  are out of order saving the user a lot of time on going
+                  through the booking process to see if their machine is
+                  available. <br />
+                  - Having a login would make this task easier since we would
+                  only display this notification if a frequently used machine is
+                  out of order.<br />
+                  <b>Pros:</b><br />
+                  - The hover mechanic and grayed out coloring is really
+                  intuitive as there are many applications with this feature.
+                  This means that a lot of users will be familiar with what this
+                  means.<br />
+                  - Showing unavailable in the calendar booking section allows
+                  students to immediately book dates further in the future if
+                  they are not in a rush. This helps them with planning if they
+                  are a relatively busy person.<br />
+                  <b>Cons:</b><br />
+                  - If a machine is out of order for many weeks, having to go
+                  back and forth to find an available time slot may be annoying.
+                  We plan to add a note that tells you the next available date
+                  when you hover over an unavailable slot. <br />
+                  - Not having a login takes away our ability to send
+                  notifications about frequently used machines, but having a
+                  login increases complexity and requires more backend work.
+                </td>
+              </tr>
+            </table>
+            <br />
+            <h3>4.3 Task 3: User creating a full-service job request</h3>
+            <br />
+            <table border="1">
+              <tr>
+                <th>Description of Step</th>
+                <th>Does the user have the knowledge/training to do this?</th>
+                <th>
+                  Is it believable that they would do it? Are they motivated?
+                </th>
+                <th>Comment/solution</th>
+              </tr>
+              <tr>
+                <td>Go to makerspace website</td>
+                <td>
+                  Probably. Full-service users are probably less technically
+                  inclined than other makerspace users. However, most people on
+                  campus are proficient with computers.
+                </td>
+                <td>
+                  Yes. They are highly motivated. They are in search of a
+                  full-service solution for their project needs.
+                </td>
+                <td>
+                  Like with some of the other tasks, the solution here would
+                  probably be non-technical, such as asking library or
+                  university staff to promote the space elsewhere online or in
+                  person.
+                </td>
+              </tr>
+              <tr>
+                <td>Navigate to Bookings tab</td>
+                <td>
+                  Most likely. If the user has any experience with the
+                  makerspace website booking process, booking a self-serve and
+                  full-serve machine would follow this same navigation step.
+                </td>
+                <td>
+                  They are highly motivated. As the term “Bookings” is intuitive
+                  in nature, the user navigating to this tab would have clear
+                  intentions.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Hover/click on a machine icon</td>
+                <td>
+                  Most likely. They know that they are looking for a full-serve
+                  option for their project design, therefore they know what
+                  machine they need to click/hover to accomplish their project
+                  goals.
+                </td>
+                <td>Yes. They are highly motivated.</td>
+                <td>
+                  <p>
+                    <b>Problem:</b> When a user hovers over a machine they are
+                    prompted with the option to book it, however our design does
+                    not specify to the user if the booking is for the self-serve
+                    or full-serve option.
+                  </p>
+                  <p>
+                    <b>Solution:</b> When a machine has multiple options,
+                    include a popup or button for each option instead of just
+                    ‘Book’ button
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Read the full-serve job guidelines</td>
+                <td>
+                  Eddy is inexperienced with 3D printing therefore reading this
+                  section is essential.
+                </td>
+                <td>
+                  Although users can be very impatient it is crucial to read
+                  this section if they want their full-serve job to be accepted
+                  by the service staff.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click the submission form</td>
+                <td>
+                  This should be clearly presented to the user and thus
+                  completing this step should not require previous experience.
+                </td>
+                <td>
+                  Yes, the user should be highly motivated if they have reached
+                  this point in the full-serve process.
+                </td>
+                <td>
+                  <p>
+                    <b>Problem:</b> It is inevitable that some users will skip
+                    the full-serve guide.
+                  </p>
+                  <p>
+                    <b>Solution:</b> We could give a warning pop-up to the user
+                    prior to starting their submission form asking if they have
+                    read the guide and warning that their full-serve job can be
+                    rejected if not meeting guidelines.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Fill out job details</td>
+                <td>
+                  Yes, this should be clearly presented to the user and thus
+                  completing this step should not require previous experience.
+                </td>
+                <td>
+                  Yes, the user should be highly motivated if they have reached
+                  this point in the full-serve process.
+                </td>
+                <td>
+                  <p>
+                    <b>Problem:</b> If the user tries to submit a file that does
+                    not fit the guidelines then the user’s job will not be
+                    accepted.
+                  </p>
+                  <p>
+                    <b>Solution:</b> Small message below file submission section
+                    stating file type/max size.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Fill out personal info</td>
+                <td>Yes, this should be clearly presented to the user.</td>
+                <td>Yes, highly motivated.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Submit full-serve job request</td>
+                <td>Yes, this should be clearly presented to the user.</td>
+                <td>Yes, highly motivated.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Receive confirmation email that full-serve request is approved
+                  and in queue.
+                </td>
+                <td>
+                  Yes. They must have included an email in their submission form
+                  to get this far in the process.
+                </td>
+                <td>Yes, highly motivated.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Receive email that the full-serve job is completed and ready
+                  for pick-up.
+                </td>
+                <td>
+                  Yes. They must have included an email in their submission form
+                  to get this far in the process.
+                </td>
+                <td>Yes, highly motivated.</td>
+                <td>
+                  <p>
+                    <b>Problem:</b> we have some user’s that may have forgotten
+                    to check their email that day/week.
+                  </p>
+                  <p>
+                    <b>Solution:</b> Send subsequent emails that their order is
+                    ready for pick-up for up to a week.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Come to TFDL main service desk to pick-up your order.</td>
+                <td>
+                  Yes. Pick up details/guidelines should be included in the
+                  email informing the user to pick up their order.
+                </td>
+                <td>
+                  Yes, highly motivated as they have already paid for the order.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <b>Other comments or problems we encountered:</b><br />
+                  - No cancellation guidelines in place if the user wants to
+                  cancel their print job.<br />
+                  <b>Pros:</b><br />
+                  - Starting to really dig deep into details of where users
+                  might get stuck. Especially important for this job as we
+                  expect full-service users to be less tech savvy.<br />
+                  <b>Cons:</b><br />
+                  - We have lots of asynchronous elements to this task that are
+                  hard to manage. Sending more and more emails doesn’t feel like
+                  a great solution. <br />
+                  - Still no back button.
+                </td>
+              </tr>
+            </table>
+            <br />
+            <h3>4.4 Task 4: Checking if a Machine is Booked by Someone Else</h3>
+            <br />
+            <table border="1">
+              <tr>
+                <th>Description of Step</th>
+                <th>Does the user have the knowledge/training to do this?</th>
+                <th>
+                  Is it believable that they would do it? Are they motivated?
+                </th>
+                <th>Comment/solution</th>
+              </tr>
+              <tr>
+                <td>Go to makerspace website</td>
+                <td>Yes.</td>
+                <td>
+                  High motivation. If they want to check if a machine is
+                  available for use on a specific day or time they would need to
+                  use the website.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Navigate to “book a machine” tab</td>
+                <td>Yes.</td>
+                <td>Yes.</td>
+                <td>
+                  <b>Problem:</b> If they are a new user wanting to just check
+                  the calendar, they may not know it is under the “book a
+                  machine” tab, especially if they are not looking to book a
+                  machine.
+                </td>
+              </tr>
+              <tr>
+                <td>Click on a machine icon</td>
+                <td>Yes.</td>
+                <td>
+                  High motivation. Will need to select a machine to check if it
+                  is available on certain days and or times.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click left or right arrows to select a week</td>
+                <td>
+                  Yes. It is a common feature when using online calendars.
+                </td>
+                <td>High motivation.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Hover over time slots highlighted in red to check details
+                </td>
+                <td>
+                  Not necessarily. If the user is experienced in using the app,
+                  they may know about this function. If the user is new, they
+                  may not know but could have the curiosity to check.
+                </td>
+                <td>
+                  High to low motivation. If the user already has experience
+                  using the app then they may not feel the need to hover over
+                  and check the details.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Hover over time slots highlighted in gray to check details
+                </td>
+                <td>Not necessarily. Same as above.</td>
+                <td>High to low motivation. Same as above.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Check for time slots not highlighted in gray or red</td>
+                <td>Yes.</td>
+                <td>High motivation.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <b>Pros:</b><br />
+                  - Easy to navigate <br />
+                  - Use of colors and legends to display occupied time slots.<br />
+                  <b>Cons:</b><br />
+                  - Some features like highlighting the calendar might be
+                  confusing for new users.
+                </td>
+              </tr>
+            </table>
+            <br />
+            <h3>4.5 Task 5: Experienced User Booking a Self-serve Machine</h3>
+            <br />
+            <table border="1">
+              <tr>
+                <th>Description of Step</th>
+                <th>Does the user have the knowledge/training to do this?</th>
+                <th>
+                  Is it believable that they would do it? Are they motivated?
+                </th>
+                <th>Comment/solution</th>
+              </tr>
+              <tr>
+                <td>Go to makerspace website</td>
+                <td>
+                  Yes, she is an experienced user and well acquainted with the
+                  system.
+                </td>
+                <td>
+                  Yes, she is an established community member and is motivated
+                  to use the space.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Log in using UCID</td>
+                <td>
+                  Yes, she is acquainted with the system and is used to using
+                  UCID to log into a variety of systems.
+                </td>
+                <td>
+                  High motivation. In order to book a machine, they would have
+                  to log in for identification.
+                </td>
+                <td>
+                  <p>
+                    <b>Comment:</b> After further discussion, we’ve decided to
+                    remove the need for users to log in. The pieces that truly
+                    required it ended up being out of scope and it introduces
+                    lots of complexity.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Navigate to Bookings tab</td>
+                <td>
+                  Yes, she is an experienced user and well acquainted with the
+                  system.
+                </td>
+                <td>High motivation. She wants to book a machine.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click on a machine icon</td>
+                <td>
+                  Yes, she is an experienced user and well acquainted with the
+                  system.
+                </td>
+                <td>Yes.</td>
+                <td>
+                  <p>
+                    <b>Comment:</b> On Tim’s suggestion, we tried to improve
+                    this section visually from previous iterations
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Click left or right arrows to select a week</td>
+                <td>
+                  Yes, she is an experienced user. Additionally, this is a
+                  common format for navigating online calendars.
+                </td>
+                <td>
+                  High motivation, since the user would like to find a day to
+                  use a machine that is most convenient for them.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Hover over an available time slot</td>
+                <td>
+                  Yes, they are well acquainted with the system. They would know
+                  this.
+                </td>
+                <td>Yes.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click the desired timeslot</td>
+                <td>Yes.</td>
+                <td>
+                  Medium motivation. Since times are adjustable, they may or may
+                  not click the desired time slot.
+                </td>
+                <td>
+                  <p>
+                    <b>Problem (from Tim): </b>the day of the week goes away in
+                    this view, most people don’t think of dates as days in the
+                    month.
+                  </p>
+                  <p>
+                    <b>Solution:</b> Add the weekday to the confirmation popup
+                  </p>
+                  <p>
+                    <b>Problem:</b> user may not know some of the booking
+                    details, such as how to estimate how much time they need
+                  </p>
+                  <p>
+                    <b>Solution:</b> system should default to a reasonable time,
+                    and attempts to change it should be allowed but should
+                    create a popup showing users how to estimate their needs
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Double-check booking details</td>
+                <td>Yes, this is something very easy to do.</td>
+                <td>
+                  Yes, she is an experienced user and knows the importance of
+                  booking enough time for the job.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click 'Confirm Booking'</td>
+                <td>Yes.</td>
+                <td>
+                  Yes, you will have to do so if you want to book your desired
+                  spot.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Click 'Export booking to Google Calendar' (optional)</td>
+                <td>
+                  Yes. Experience is not required as the button describes
+                  itself.
+                </td>
+                <td>
+                  Medium. Depends on the user’s preferences, as this is a fully
+                  optional step.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Receive confirmation email</td>
+                <td>
+                  Yes, they are an experienced user so they expect a
+                  confirmation email.
+                </td>
+                <td>Requires no effort on her end.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Arrive at makerspace 10 minutes early</td>
+                <td>
+                  Yes, she is an experienced user, so she would know that she
+                  has to arrive 10 minutes early.
+                </td>
+                <td>
+                  Medium motivation. Depends on whether or not the user decides
+                  to listen to this or if they remember.
+                </td>
+                <td>
+                  <p>
+                    <b>Problem:</b> we have some text telling the user to come
+                    early, but they may have forgotten by the time their booking
+                    comes around.
+                  </p>
+                  <p>
+                    <b>Solution:</b> Send a second email on the day of the
+                    user’s booking
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>Show UCID to makerspace staff</td>
+                <td>Yes, all students should know what a UCID is.</td>
+                <td>
+                  Most students keep their ID on them while on campus, so this
+                  is not a very difficult task.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Setup machine</td>
+                <td>
+                  She has used the machines many times, so she knows how to do
+                  this.
+                </td>
+                <td>
+                  High motivation. It is self-serve printing and she is an
+                  experienced user. It is expected that you set up the printer
+                  yourself in order to start printing.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Use machine</td>
+                <td>
+                  She has used the machine many times, so she knows how to do
+                  this.
+                </td>
+                <td>
+                  Seeing as this is a hobby of hers, she is motivated to use the
+                  machine.
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <b>Other comments or problems we encountered:</b> <br />
+                  - We agreed that requiring users to log in was unnecessary and
+                  created a lot of overhead in other places that we wanted to
+                  avoid, so we have removed it. This requires some other pieces
+                  of the prototype to 29 change in response. Specifically, we
+                  need to add fields to the bookings detail page which require
+                  users to input their UCID and email. <br />
+                  <b>Pros:</b><br />
+                  - Feels more cohesive than other attempts. Fewer edge cases
+                  and fewer opportunities for users to back themselves into
+                  corners.<br />
+                  <b>Cons:</b><br />
+                  - Design could take more risks, tends toward being ‘clicky’
+                  when maybe there are better solutions.<br />
+                  - Some of the steps, only work because the user is experienced
+                  and already knows what to do. <br />
+                  - Some weird flow issues where we couldn’t figure out a good
+                  way to get the correct info to the user at the correct time.
+                  Especially because we want to avoid a wall of text.<br />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <h3>4.6 Analysis of Design</h3>
+            <br />
+            Overall, the design of this prototype is much more polished than
+            previous iterations. There are far fewer places where a user
+            requires specific knowledge to figure out where to go next.
+            Additionally, the design feels more lively and engaging. Upon
+            analysis of this prototype, we also realized that the system no
+            longer needs user login features, which is a major reduction in
+            unnecessary complexity.
+            <br /><br />
+            The remaining challenges of this prototype were mostly surrounding
+            the flow of asynchronous task portions, including figuring out when
+            to provide the user with more information. For example, we realized
+            that there were multiple places where the system needs the ability
+            to get back in touch with a user at a later date, such as a booking
+            reminder or a heads up that their full-serve 3D print job is
+            complete.
+            <br /><br />
+            Though this walkthrough revealed issues, most of the problems are
+            easily fixed via tweaks or by adding additional context, as opposed
+            to reworking major portions of the design. With these slight changes
+            made, we feel that this prototype is in a good position to move
+            ahead.
+            <br /><br />
+            <h3>Section 3: Redesign Rationale</h3>
+            <br />
+            Throughout the redesign process, including the prototyping and
+            walkthrough phases, a more cohesive design began to develop.
+            However, there were still some usability and design challenges that
+            we were able to address in the iteration that eventually became our
+            horizontal prototype. First, we found that our previous design
+            relied too heavily on modals and popups, which were annoying to use
+            and added unnecessary clicks to complete basic tasks. Our issues
+            with modals also revealed a second issue; we realised that we had
+            several areas where interaction with one part of our UI caused
+            information from another part to become hidden, even when that
+            information was still relevant. Finally, we found our design to be
+            too sparse, and we often didn’t give the user enough information.
+            Overall, we realised that we could be much more liberal in the
+            amount of information that we could fit on a single page, which
+            allowed us to address many of these issues while maintaining the
+            pieces of the design that we thought were effective in previous
+            iterations.
+            <br /><br />
+            Dialogs and modals were a prevalent feature of many of our early
+            designs. We often employed a popup to allow users to type in more
+            information, and then a modal to confirm that their information had
+            been processed. This resulted in multiple button clicks to complete
+            even simple tasks. The use of modals was especially problematic, as
+            they often contained little or no new information. An additional
+            challenge related to our use of modals and popups was the occlusion
+            of important information. In a number of cases, interacting with one
+            part of the UI would cause other pieces of the UI to be hidden,
+            essentially removing valuable information from view. 31 To fix these
+            issues, we redesigned our UI to put less emphasis on modals,
+            dialogs, and popups. This allowed us to take functionality and
+            information that had previously been spread across two or even three
+            popups, and collapse it into fewer pages. The major design change
+            that incorporated this idea can be seen in the booking schedule
+            page. Previous iterations had used separate pages for the schedule
+            and the user’s details (Figures 2.1, 2.2), and a popup to confirm
+            that a user’s booking had completed successfully (Figure 2.5). We
+            were able to successfully put the visual schedule view, the user
+            details, and the confirmation information on a single page, reducing
+            ‘busy work’ and unnecessary clicks, while also ensuring that all
+            relevant data is visible simultaneously (Figure 2.10).
+            <br /><br />
+            The last aspect added to the prototype in the redesign process was
+            giving the user more information that was helpful for the completion
+            of tasks. For example, in the low-fidelity prototype the step of
+            selecting a machine required a user to already know what each
+            machine is useful for. Without a good understanding of what to look
+            for, the "Book a Machine" page was not helpful to the user in
+            finding the right device for their project. To solve this, both the
+            list view and the visual view of the page were redesigned to include
+            this information (Figure 1.3), where the user is able to select a
+            machine from the makerspace and read its features. Additionally, the
+            user is warned that they should complete a safety orientation before
+            choosing to book a machine (Figure 1.4), which was not present
+            previously.
+            <br /><br />
+            Similarly, more information was added to the calendar view of
+            bookings and the booking details page. For both, the day of the week
+            was added along with the date since most students and faculty
+            organise their schedules according to these. This way booking a
+            machine can become more convenient. Finally, a way to estimate the
+            time needed for a project was added to the booking section. This
+            tool gives the user an estimated time to complete a project based on
+            its size and level of detail so that they can book a machine for
+            that period and not struggle with overlapping bookings.
+            <br /><br />
+            <h2>Phase 5: Medium Fidelity Illustrations:</h2>
+            <br />
+            <h3>Previous: Booking a machine List View</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs1.png"
+              style="width: 90%"
+            /><br />
+            Figure 1.1: Previous - Booking a machine List View<br /><br />
+            <h3>Previous: Booking a machine Workbench View</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs2.png"
+              style="width: 90%"
+            /><br />
+            Figure 1.2: Previous - Booking a machine Workbench View<br /><br />
+            <h3>Updated: Booking a Machine List View</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs3.png"
+              style="width: 90%"
+            /><br />
+            Figure 1.3: Updated - Booking a machine List View<br /><br />
+            <h3>Updated: Booking a Machine Workbench View</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs4.png"
+              style="width: 90%"
+            /><br />
+            Figure 1.4: Updated - Booking a machine, Machine View<br /><br />
+            <h3>Previous: Booking a Machine Date and Time Selection</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs5.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.1: Previous - Booking a Machine Date and Time Selection<br /><br />
+            <h3>Previous: Booking a Machine Confirmation</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs6.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.2: Previous - Booking a Machine Confirmation<br /><br />
+            <h3>
+              Previous: Booking a Machine Confirmation Time Recommendation
+            </h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs7.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.3: Previous - Booking a Machine Confirmation Time
+            Recommendation<br /><br />
+            <h3>Previous: Booking a Machine Confirmation Safety Reminder</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs8.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.4: Previous - Booking a Machine Confirmation Safety
+            Reminder<br /><br />
+            <h3>Previous: Booking a Machine Confirmation Message</h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs9.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.5: Previous - Booking a Machine Confirmation Message<br /><br />
+            <h3>
+              Update: Booking a Machine Date and Time Selection Safety Course
+              Needed
+            </h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs10.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.6: Update - Booking a Machine Date and Time Selection
+            Safety Course Needed<br /><br />
+            <h3>
+              Update: Booking a Machine Date and Time Selection Safety Course
+              Complete
+            </h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs11.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.7: Update - Booking a Machine Date and Time Selection
+            Safety Course Complete<br /><br />
+            <h3>
+              Update: Booking a Machine Date and Time Selection Project Size
+            </h3>
+            <br />
+            <img
+              src="../assets/mkrsAssets/mkrs12.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.8: Update - Booking a machine date and time selection
+            recommendation, estimating project time through questionnaire<br><br>
+            <h3>Update: Booking a Machine Date and Time Selection Recommendation</h3><br>
+            <img
+              src="../assets/mkrsAssets/mkrs13.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.9: Update - Booking a machine date and time selection recommendation, estimating project time results <br><br>
+            <h3>Update: Booking a Machine Confirmation Message</h3><br>
+            <img
+              src="../assets/mkrsAssets/mkrs14.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.10: Update - Booking a machine confirmation message <br><br>
+            <h3>Updated: Confirmation Email</h3><br>
+            <img
+              src="../assets/mkrsAssets/mkrs15.png"
+              style="width: 90%"
+            /><br />
+            Figure 2.11: Update - Confirmation Email<br><br>
+            <h3>Previous: Full Service 3D Print Guidelines</h3><br>
+             -->
           </div>
         </div>
       </div>

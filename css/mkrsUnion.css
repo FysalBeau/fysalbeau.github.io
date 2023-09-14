@@ -155,12 +155,25 @@ body {
   padding: 20px;
 }
 
-.video {
-  border: none;
+/* .info-title{
+  text-align: center;
 }
 
-.project2-info {
+.info-desc{
   text-align: center;
+}
+
+.video-title{
+  text-align:center;
+}
+
+.video {
+  border: none;
+  text-align: center;
+} */
+
+.project2-info {
+  text-align:center;
   background-color: white;
   border: 3px solid black;
   border-radius: 30px;
@@ -170,6 +183,11 @@ body {
   padding: 5%;
   font-size: 20px;
 }
+
+.mock-wrapper {
+  display: flex;
+}
+
 
 .initial-h1 {
   font-size: 40px;
