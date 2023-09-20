@@ -115,10 +115,9 @@
   
   .projects-title h1 {
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    font-size: 54px;
     font-weight: bolder;
     background-color: white;
     border: 3px solid black;

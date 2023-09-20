@@ -355,42 +355,62 @@ section {
   border-radius: 30px;
 }
 
-.projects-wrapper a:nth-child(1) .card_wrapper {
+.projects-wrapper a:nth-of-type(1) .card_wrapper {
+  background-image: url("../assets/dataCard.jpg");
+  background-size: 130%;
+  background-position: top;
+  box-shadow: 12px 12px #8298f5;
+}
+.projects-wrapper a:nth-child(2) .card_wrapper {
   background-image: url("../assets/mkrsunion.png");
   box-shadow: 12px 12px #f5bf44;
 }
-.projects-wrapper a:nth-of-type(2) .card_wrapper {
+.projects-wrapper a:nth-of-type(3) .card_wrapper {
   background-image: url("../assets/Alphabody-1.png");
   background-size: 80%;
   background-position: top;
   box-shadow: 12px 12px #ee7772;
 }
 
-.projects-wrapper a:nth-of-type(3) .card_wrapper {
+.projects-wrapper a:nth-of-type(4) .card_wrapper {
   background-image: url("../assets/vr-therapy.png");
-  box-shadow: 12px 12px #8298f5;
+  box-shadow: 12px 12px  #f5bf44;
 }
-
-.projects-wrapper a:nth-child(4) .card_wrapper {
-  background-image: url("../assets/Papercrane-1.png");
-  background-size: 80%;
+.projects-wrapper a:nth-of-type(5) .card_wrapper {
+  background-image: url("../assets/sentiment-thumbnail.png");
+  background-size: 150%;
   background-position: top;
   box-shadow: 12px 12px #93caac;
 }
 
-.projects-wrapper a:nth-of-type(5) .card_wrapper {
+
+.projects-wrapper a:nth-of-type(6) .card_wrapper {
   background-image: url("../assets/tug-of-war.png");
   background-size: 200px 250px;
+  background-position: top;
+  box-shadow: 12px 12px #8298f5;
+}
+.projects-wrapper a:nth-child(7) .card_wrapper {
+  background-image: url("../assets/Papercrane-1.png");
+  background-size: 80%;
   background-position: top;
   box-shadow: 12px 12px #ee7772;
 }
 
-.projects-wrapper a:nth-of-type(6) .card_wrapper {
+.projects-wrapper a:nth-of-type(8) .card_wrapper {
   background-image: url("../assets/postureAlert.jpeg");
   background-size: 80%;
   background-position: top;
   box-shadow: 12px 12px #f5bf44;
 }
+
+.projects-wrapper a:nth-of-type(9) .card_wrapper {
+  background-image: url("../assets/survey-study-thumbnail.png");
+  background-size: 80%;
+  background-position: top;
+  box-shadow: 12px 12px #ee7772;
+}
+
 
 .project_summary {
   margin-top: 260px;
