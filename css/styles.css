@@ -637,7 +637,6 @@ footer {
 
   .about {
     padding-top: 150px;
-    margin-top: 20px;
     margin-bottom: 100px;
   }
 
@@ -781,25 +780,32 @@ footer {
   }
 
   .hero-info h1 {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bold;
   }
 
   .hero h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
   }
 
   .hero p {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: regular;
   }
 
   .hero p2 {
-    font-size: 60px;
+    font-size: 35px;
   }
   .button-wrapper {
     margin-top: 1.5%;
+    width: 280px;
+
+  }
+
+  .about{
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   .about-grid {
@@ -809,6 +815,7 @@ footer {
 
   .about-info {
     grid-area: first;
+    margin-left: 50px;
   }
 
   .about-info h1 {
@@ -826,6 +833,8 @@ footer {
   }
 
   .pic {
+    width: 380px;
+    height: 380px;
   }
 
   .project-grid {
@@ -834,6 +843,10 @@ footer {
       " one three"
       "four five"
       "two two";
+  }
+
+  .projects-title h1{
+    font-size: 50px;
   }
 
   .project-info {
@@ -867,16 +880,27 @@ footer {
     height: 400px;
   }
 
+  .contact{
+    margin-top: 50px;
+  }
+  
+  .contact-info{
+    margin-left: 50px;
+    max-height: 480px;
+  }
+
+  .form-wrapper{
+    margin-right: 50px;
+  }
   .contact h1 {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .contact p {
     max-width: 400px;
     font-weight: regular;
-    font-size: 25px;
-    margin-top: 0;
+    font-size: 20px;
   }
 
   .form-wrapper {
@@ -917,7 +941,7 @@ footer {
   }
   a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
   /* lockes home button to window so when you scroll it moves down the page   */
@@ -986,6 +1010,7 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    max-width: 375px;
   }
 
   img.profile {
@@ -1019,6 +1044,10 @@ footer {
   .about {
     margin-top: 15%;
     margin-bottom: 15%;
+  }
+
+  .about-info{
+    max-width: 350px;
   }
 
   .about-info h1 {
@@ -1066,6 +1095,14 @@ footer {
     height: 500px;
   }
 
+  .projects-title{
+    max-width: 350px;
+  }
+  .projects-title{
+    font-size: 30px;
+    text-align: center;
+  }
+
   .project_summary {
     padding: 0px;
   }
@@ -1109,7 +1146,7 @@ footer {
   .contact-info {
     margin-top: 15%;
     margin-bottom: 15%;
-    width: 360px;
+    max-width: 350px;
   }
   .contact h1 {
     display: flex;
@@ -1130,6 +1167,7 @@ footer {
 
   .form-wrapper {
     padding-top: 10%;
+    max-width: 350px; /*not working?*/
   }
 
   .open-nav {
